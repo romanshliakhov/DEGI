@@ -7,6 +7,9 @@
     background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
     border-radius: 24px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &::before {
       content: '';
@@ -24,11 +27,64 @@
     display: grid;
     grid-template-columns: 45% 45%;
     justify-content: space-between;
-    min-height: 840px;
+    min-height: 535px;
+    width: 1110px;
   }
 
   &__block {
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
+  &__timer {
+    width: 465px;
+    height: 98px;
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url('../img/sprite/clock.svg');
+      width: 51px;
+      height: 51px;
+      left: -25px;
+      top: -20px;
+      transform: rotate(-21deg);
+    }
+  }
+
+  &__details {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+
+    span {
+      color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(92.05deg, #FFAB5D 7.98%, #FEE97B 131.44%);
+      font-weight: 700;
+    }
+  }
+
+  &__card {
+    width: 225.89px;
+    height: 317.05px;
+  }
+
+  &__scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 75px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #fff;
+  }
 }
