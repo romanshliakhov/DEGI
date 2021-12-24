@@ -19,4 +19,16 @@
       transform: translateX(-50%);
     }
   }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    min-height: 840px;
+  }
+
+  &__block {
+    background-color: yellow;
+  }
+
 }

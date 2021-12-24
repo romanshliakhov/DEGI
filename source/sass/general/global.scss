@@ -152,7 +152,7 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 50%;
   transform: translateX(-50%);
 
-  img {
+  &-img {
     animation: arrow-down 2s infinite;
 
     @keyframes arrow-down {
@@ -171,5 +171,6 @@ input[type="search"]::-webkit-search-results-decoration {
       }
     }
   }
-
 }
+
+
