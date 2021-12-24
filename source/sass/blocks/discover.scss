@@ -1,0 +1,11 @@
+.discover {
+  margin-top: 20px;
+  position: relative;
+
+  &__inner {
+    width: 100%;
+    min-height: 840px;
+    background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
+    border-radius: 24px;
+  }
+}

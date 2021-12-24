@@ -108,8 +108,40 @@ input[type="search"]::-webkit-search-results-decoration {
 
 @media (min-width: 1000) and (max-width: 1600px) {
   .container {
-    max-width: 1000px;
+    max-width: 1330px;
     padding: 0 15px;
     margin: 0 auto;
+  }
+}
+
+.profile {
+  width: 81px;
+  height: 42px;
+  border: 1px solid #4E55FF;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #4E55FF;
+  transition: font-weight 0.3s ease-in;
+
+  &:hover {
+    font-weight: 700;
+  }
+}
+
+.wallet {
+  width: 155px;
+  height: 42px;
+  background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #fff;
+  transition: opacity 0.5s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
   }
 }
