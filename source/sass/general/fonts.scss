@@ -1,17 +1,63 @@
 @font-face {
-  font-family: "RobotoCondensed";
-  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
-       url("../fonts/RobotoCondensed-Regular.woff") format("woff");
-  font-display: swap;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
+  font-family: "Rubik";
+  font-display: swap;
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
+     url("../fonts/Rubik-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "RobotoCondensed";
-  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
-       url("../fonts/RobotoCondensed-Bold.woff") format("woff");
-  font-display: swap;
-  font-weight: 700;
   font-style: normal;
+  font-weight: 500;
+  font-family: "Rubik";
+  font-display: swap;
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
+     url("../fonts/Rubik-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Rubik";
+  font-display: swap;
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"),
+     url("../fonts/Rubik-Bold.woff") format("woff");
+}
+
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "NotoSans";
+  font-display: swap;
+  src: url("../fonts/NotoSans-Regular.woff2") format("woff2"),
+     url("../fonts/NotoSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "NotoSans";
+  font-display: swap;
+  src: url("../fonts/NotoSans-Medium.woff2") format("woff2"),
+     url("../fonts/NotoSans-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "NotoSans";
+  font-display: swap;
+  src: url("../fonts/NotoSans-SemiBold.woff2") format("woff2"),
+     url("../fonts/NotoSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "NotoSans";
+  font-display: swap;
+  src: url("../fonts/NotoSans-Bold.woff2") format("woff2"),
+     url("../fonts/NotoSans-Bold.woff") format("woff");
 }

@@ -21,8 +21,6 @@
   &__nav-link {
     font-size: 14px;
     line-height: 19px;
-    font-weight: 400;
-    color: #2B2D65;
     transition: color 0.3s;
 
     &:hover {
@@ -36,7 +34,7 @@
   }
 
   &__btns {
-    width: 250px;
+    width: 255px;
     display: flex;
     justify-content: space-between;
   }

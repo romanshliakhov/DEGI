@@ -6,10 +6,12 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: "RobotoCondensed", sans-serif;
-  font-size: 25px;
-  line-height: 33px;
-  font-weight: 700;
+  font-family: "NotoSans", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #2B2D65;
+  background-color: #F8F9FD;
 }
 
 .body__scroll {
@@ -119,11 +121,12 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 42px;
   border: 1px solid #4E55FF;
   border-radius: 8px;
+  font-family: "RUbik", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
   color: #4E55FF;
-  transition: font-weight 0.3s ease-in;
+  transition: font-weight 0.1s ease-in;
 
   &:hover {
     font-weight: 700;
@@ -131,15 +134,16 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .wallet {
-  width: 155px;
+  width: 160px;
   height: 42px;
   background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
   border-radius: 8px;
+  font-family: "RUbik", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
   color: #fff;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 
   &:hover {
     opacity: 0.6;
@@ -152,7 +156,7 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 50%;
   transform: translateX(-50%);
 
-  &-img {
+  &-image {
     animation: arrow-down 2s infinite;
 
     @keyframes arrow-down {
@@ -175,7 +179,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .title {
   padding-top: 40px;
-  padding-left: 30px;
+  font-family: "RUbik", sans-serif;
   font-size: 62px;
   line-height: 75px;
   font-weight: 500;
