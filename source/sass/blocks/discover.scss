@@ -74,15 +74,13 @@
   }
 
   &__cards {
-    display: flex;
     height: 100%;
     position: relative;
   }
 
   &__card {
     position: absolute;
-    width: 225.89px;
-    height: 317.05px;
+
 
     &:first-child {
       top: 100px;
