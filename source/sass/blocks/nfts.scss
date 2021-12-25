@@ -1,0 +1,39 @@
+.nfts {
+  min-height: 1187px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+
+  &__subtitle {
+    max-width: 470px;
+    text-align: right;
+
+    span {
+      text-align: left;
+      display: block;
+    }
+  }
+
+  &__sliders {
+    margin-top: 35px;
+    min-height: 715px;
+    transform: rotate(-7deg);
+  }
+
+  &__top-slider {
+    min-width: 120%;
+    margin-left: -10%;
+    height: 320px;
+    margin-bottom: 40px;
+    background-color: blue;
+
+  }
+
+  &__bot-slider {
+    min-width: 120%;
+    margin-left: -10%;
+    height: 320px;
+    background-color: red;
+  }
+}
