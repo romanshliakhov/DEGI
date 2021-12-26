@@ -1,3 +1,52 @@
+// sliders
+let nftsSliderTop = new Swiper('.nfts__top-slider', {
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  loop: true,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+    reverseDirection: true
+  },
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  },
+});
+
+let nftsSliderBot = new Swiper('.nfts__bot-slider', {
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  loop: true,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+    reverseDirection: true
+  },
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  },
+});
+
 // tabs
 document.addEventListener('DOMContentLoaded', () => {
 	const tabs = document.querySelector('.tabs');
@@ -119,7 +168,7 @@ if (spollersArray.length > 0) {
 			}
 		});
 	}
-  
+
 	// Работа с контентом
 	function initSpollerBody(spollersBlock, hideSpollerBody = true) {
 		const spollerTitles = spollersBlock.querySelectorAll('[data-spoller]');
