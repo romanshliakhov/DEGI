@@ -1,0 +1,45 @@
+.tabs {
+	position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs__list {
+	display: flex;
+	flex-direction: column;
+
+  li + li {
+    margin-top: 22px;
+  }
+}
+
+.tabs__btn {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #B3B4CA;
+  transition: color 0.3s;
+}
+
+.tabs__btn:hover {
+	color: #2B2D65;
+}
+
+.tabs__btn--active {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #4E55FF;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	pointer-events: none;
+}
+
+.tabs__content {
+  max-width: 745px;
+  width: 100%;
+	display: none;
+}
+
+.tabs__content--active {
+	display: block;
+}
+

@@ -3,7 +3,12 @@
 
   &__tabs {
     margin-top: 85px;
-    background-color: yellow;
     height: 590px;
+  }
+
+  &__accordion {
+    li + li {
+      margin-top: 32px;
+    }
   }
 }
