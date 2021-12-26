@@ -48,7 +48,7 @@
         </nav>
         <div class="header__btns">
           <button class="profile">Profile</button>
-          <button class="wallet">Connect wallet</button>
+          <button class="wallet" data-path="wallet">Connect wallet</button>
         </div>
       </div>
     </div>
@@ -811,6 +811,53 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal">
+		<div class="modal__container" data-animation="fade" data-speed="300" data-target="wallet">
+			<div class="modal__wallet">
+        <div class="modal__head">
+          <div class="modal__title">Connect wallet</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__inner">
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+        </div>
+
+				<div class="modal__bottom">
+          <div class="modal__text">Haven’t got a cryptowallet yet?</div>
+          <button class="wallet">Learn how to connect</button>
+        </div>
+			</div>
+		</div>
+	</div>
 
   <script src="js/swiper.min.js"></script>
   <script src="js/common.min.js"></script>
