@@ -144,7 +144,7 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 42px;
   background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
   border-radius: 8px;
-  font-family: "RUbik", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
@@ -200,7 +200,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .subtitle {
-  font-family: "RUbik", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 62px;
   line-height: 75px;
   font-weight: 500;
@@ -213,10 +213,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .descr {
-  font-family: "RUbik", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 32px;
   line-height: 42px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .text {
