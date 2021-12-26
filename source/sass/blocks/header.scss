@@ -11,25 +11,10 @@
   &__nav-list {
     max-width: 497px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 
     li + li {
       margin-left: 60px;
-    }
-  }
-
-  &__nav-link {
-    font-size: 14px;
-    line-height: 19px;
-    transition: color 0.3s;
-
-    &:hover {
-      color: #B3B4CA;
-    }
-
-    &--active {
-      font-weight: 700;
-      color: #4E55FF;
     }
   }
 

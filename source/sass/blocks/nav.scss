@@ -1,0 +1,19 @@
+.nav {
+  &__link {
+    font-size: 14px;
+    line-height: 19px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #B3B4CA;
+    }
+
+    &--active {
+      font-weight: 700;
+      color: #4E55FF;
+    }
+  }
+}
+
+
+
