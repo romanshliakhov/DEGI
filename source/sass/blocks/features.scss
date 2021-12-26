@@ -1,0 +1,146 @@
+.features {
+  padding: 155px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 580px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    max-width: 445px;
+  }
+
+  &__down {
+    margin-top: 53px;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__nft-status {
+    position: relative;
+    margin-top: 45px;
+    height: 97px;
+    width: 235px;
+
+    .legendary {
+      top: 17px;
+      left: 50%;
+      width: 115px;
+      font-size: 17px;
+      line-height: 17px;
+      position: absolute;
+      transform: translateX(-50%) rotate(-13.71deg);
+      z-index: 1;
+    }
+
+    .epic {
+      position: absolute;
+      font-size: 17px;
+      line-height: 17px;
+      right: 16px;
+      top: 22px;
+      z-index: 4;
+    }
+
+    .rare {
+      position: absolute;
+      z-index: 3;
+      left: 35px;
+      top: 50%;
+      font-size: 17px;
+      line-height: 17px;
+      transform: rotate(-20.89deg);
+      z-index: 2;
+    }
+
+    .uncommon {
+      position: absolute;
+      font-size: 17px;
+      line-height: 17px;
+      bottom: 25px;
+      right: 0;
+      transform: rotate(14deg);
+      z-index: 3;
+    }
+
+    .common {
+      position: absolute;
+      font-size: 17px;
+      line-height: 17px;
+      left: 50%;
+      bottom: 7px;
+      transform: translateX(-50%) rotate(-3.71deg);
+      z-index: 5;
+    }
+  }
+
+  &__image {
+    .card {
+      min-width: 375px;
+      min-height: 535px;
+      border-radius: 32px;
+      padding: 14px;
+      transform: matrix(1, 0.23, 0, 0.98, 0, 0);
+      filter: drop-shadow(-7px 4px 15px rgba(172,181,215,.55));
+      box-shadow: 52px -35px 10px 10px rgba(255, 255, 255, 0.87);
+    }
+
+    .card__image {
+      min-width: 100%;
+      min-height: 350px;
+    }
+
+    .card__info {
+      padding-top: 15px;
+    }
+
+    .card__series {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .card__title {
+      font-size: 24px;
+      line-height: 38px;
+    }
+
+    .card__divider {
+      margin-top: 15px;
+    }
+
+    .card__footer {
+      margin-top: 20px;
+    }
+
+    .card__status  {
+      padding-left: 25px;
+      font-size: 16px;
+      line-height: 16px;
+
+      &::before {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .card__price {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+
+      &::before {
+        width: 21px;
+        height: 21px;
+        left: -25px;
+      }
+    }
+  }
+}
