@@ -1,0 +1,32 @@
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__count-content {
+    display: flex;
+	  justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 42px;
+    line-height: 67px;
+    font-weight: 700;
+  }
+
+  &__count-val {
+    min-width: 50px;
+  }
+
+  &__count-separator {
+    margin: 0 9px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+}
+
+
