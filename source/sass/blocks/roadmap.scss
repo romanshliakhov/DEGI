@@ -1,0 +1,65 @@
+.roadmap {
+  padding: 150px 0;
+
+  &__way {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & + & {
+      margin-top: 85px;
+    }
+
+    &:nth-child(even) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__way-items {
+    max-width: 525px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__way-item {
+    position: relative;
+    width: 192px;
+    height: 128px;
+    border: 1px solid #B3B4CA;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__way-image {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+  }
+
+  &__way-img {
+    border-radius: 50%;
+  }
+
+  &__way-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  &__way-data {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #B3B4CA;
+  }
+}
