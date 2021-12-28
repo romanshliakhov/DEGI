@@ -1,5 +1,20 @@
 .roadmap {
   padding: 150px 0;
+  position: relative;
+  overflow-x: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/roadmap.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    left: 160px;
+    top: 0px;
+    z-index: 1;
+  }
 
   &__way {
     display: flex;
@@ -7,7 +22,7 @@
     align-items: center;
 
     & + & {
-      margin-top: 85px;
+      margin-top: 110px;
     }
 
     &:nth-child(even) {
@@ -33,6 +48,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: 10;
   }
 
   &__way-image {
