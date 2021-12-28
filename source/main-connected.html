@@ -48,7 +48,40 @@
         </nav>
         <div class="header__btns">
           <div class="profile">Profile</div>
-          <div class="wallet" data-path="wallet">Connect wallet</div>
+          <div class="wallet wallet--connected" data-easy-toggle="#wallet" data-easy-class="open" data-easy-rcoe>0x...4b8E</div>
+          <div class="wallet__content" id="wallet">
+            <div class="wallet__tabs">
+              <ul class="wallet__tabs-list">
+                <li class="wallet__tabs-item">
+                  <button class="wallet__tabs-btn wallet__tabs-btn--active" data-tabs-path="wallet">Wallet</button>
+                </li>
+                <li class="wallet__tabs-item" >
+                  <button class="wallet__tabs-btn" data-tabs-path="history">Transactions</button>
+                </li>
+              </ul>
+              <div class="wallet__tabs-content wallet__tabs-content--active" data-tabs-target="wallet">
+                <div class="wallet__content-info">
+                  <div class="wallet__content-adress">
+                    <div class="wallet__content-title">My address</div>
+                    <div class="wallet__content-details">
+                      <span class="wallet__adress" >0x77D1a9b1c4F5F3317d6</span>
+                      <img src="img/sprite/copy.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="wallet__content-adress">
+                    <div class="wallet__content-title">Balance</div>
+                    <div class="wallet__content-details"><span class="wallet__balance">0.000 BNB</span></div>
+                  </div>
+                </div>
+                <button class="disconnect">Disconnect wallet</button>
+              </div>
+              <div class="wallet__tabs-content" data-tabs-target="history">
+                <div class="wallet__content-info">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ut excepturi perspiciatis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -57,7 +90,7 @@
   <main>
     <section class="discover">
       <div class="container">
-        <div class="discover__inner">
+        <div class="discover__inner discover__inner--connected">
           <div class="discover__wrapper">
             <div class="discover__block">
               <h1 class="title">Meet the unique collection of <span>DEGY NFTs</span></h1>

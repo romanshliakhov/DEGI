@@ -47,56 +47,49 @@ let nftsSliderBot = new Swiper('.nfts__bot-slider', {
   },
 });
 
-// tabs
+// wallet tabs
 document.addEventListener('DOMContentLoaded', () => {
-	const tabs = document.querySelector('.tabs');
-	const tabsBtn = document.querySelectorAll('.tabs__btn');
-	const tabsContent = document.querySelectorAll('.tabs__content');
+	const tabs = document.querySelector('.wallet__tabs');
+	const tabsBtn = document.querySelectorAll('.wallet__tabs-btn');
+	const tabsContent = document.querySelectorAll('.wallet__tabs-content');
 
 	if (tabs) {
 		tabs.addEventListener('click', (e) => {
-			if (e.target.classList.contains('tabs__btn')) {
+			if (e.target.classList.contains('wallet__tabs-btn')) {
 				const tabsPath = e.target.dataset.tabsPath;
-				tabsBtn.forEach(el => {el.classList.remove('tabs__btn--active')});
-				document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('tabs__btn--active');
+				tabsBtn.forEach(el => {el.classList.remove('wallet__tabs-btn--active')});
+				document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('wallet__tabs-btn--active');
 				tabsHandler(tabsPath);
-			}
-
-			if (e.target.classList.contains('tabs__arrow--prev')) {
-				let activeBtn = document.querySelector('.tabs__btn--active');
-				let activeParent = activeBtn.closest('.tabs__item');
-				let previousParent = activeParent.previousElementSibling;
-
-				if (previousParent) {
-					let prevActive = previousParent.querySelector('.tabs__btn')
-					tabsBtn.forEach(el => {el.classList.remove('tabs__btn--active')});
-					prevActive.classList.add('tabs__btn--active');
-
-					let path = prevActive.dataset.tabsPath;
-					tabsHandler(path);
-				}
-			}
-
-			if (e.target.classList.contains('tabs__arrow--next')) {
-				let activeBtn = document.querySelector('.tabs__btn--active');
-				let activeParent = activeBtn.closest('.tabs__item');
-				let nextParent = activeParent.nextElementSibling;
-
-				if (nextParent) {
-					let nextActive = nextParent.querySelector('.tabs__btn');
-					tabsBtn.forEach(el => {el.classList.remove('tabs__btn--active')});
-					nextActive.classList.add('tabs__btn--active');
-
-					let path = nextActive.dataset.tabsPath;
-					tabsHandler(path);
-				}
 			}
 		});
 	}
 
 	const tabsHandler = (path) => {
-		tabsContent.forEach(el => {el.classList.remove('tabs__content--active')});
-		document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content--active');
+		tabsContent.forEach(el => {el.classList.remove('wallet__tabs-content--active')});
+		document.querySelector(`[data-tabs-target="${path}"]`).classList.add('wallet__tabs-content--active');
+	};
+});
+
+// facts tabs
+document.addEventListener('DOMContentLoaded', () => {
+	const tabs = document.querySelector('.facts__tabs');
+	const tabsBtn = document.querySelectorAll('.facts__tabs-btn');
+	const tabsContent = document.querySelectorAll('.facts__tabs-content');
+
+	if (tabs) {
+		tabs.addEventListener('click', (e) => {
+			if (e.target.classList.contains('facts__tabs-btn')) {
+				const tabsPath = e.target.dataset.tabsPath;
+				tabsBtn.forEach(el => {el.classList.remove('facts__tabs-btn--active')});
+				document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('facts__tabs-btn--active');
+				tabsHandler(tabsPath);
+			}
+		});
+	}
+
+	const tabsHandler = (path) => {
+		tabsContent.forEach(el => {el.classList.remove('facts__tabs-content--active')});
+		document.querySelector(`[data-tabs-target="${path}"]`).classList.add('facts__tabs-content--active');
 	};
 });
 
@@ -475,3 +468,68 @@ document.addEventListener('DOMContentLoaded', () => {
 	timeCount();
 	setInterval(timeCount, 1000);
 });
+
+
+// menu dropdown
+(function () {
+  'use strict';
+
+  // Прослушиваем событие CLICK
+  document.addEventListener('click', EasyTogglerHandler);
+
+  /**
+   * Основная функция-обработчик EasyToggler.
+   */
+  function EasyTogglerHandler(event) {
+
+    // Задаём основную кнопку EasyToggler
+    const EY_BTN = event.target.closest('[data-easy-toggle]');
+
+    /**
+     * Проверка нажатия на основную кнопку EasyToggle и
+     * проверка на нажатие вне его кнопок
+     */
+
+    if (EY_BTN) {
+      event.preventDefault();
+      let ey_target = EY_BTN.getAttribute('data-easy-toggle');
+      let ey_class = EY_BTN.getAttribute('data-easy-class');
+
+      try {
+        document.querySelectorAll('[data-easy-toggle]').forEach(easyBlock => {
+          if (!easyBlock.hasAttribute('data-easy-parallel') && easyBlock !== EY_BTN) {
+            document.querySelector(easyBlock.getAttribute('data-easy-toggle')).classList.remove(easyBlock.getAttribute('data-easy-class'));
+          }
+        });
+
+        document.querySelector(ey_target).classList.toggle(ey_class);
+      } catch (ey_error) {
+        console.warn('EasyToggler.js : Блок ' + ey_target + ' не существует');
+      }
+    }
+
+    if (!EY_BTN) {
+      // Получаем массив из кнопок с атрибутом [data-easy-rcoe]
+      let ey_rcoe_block_targets = document.querySelectorAll('[data-easy-rcoe]');
+
+      /**
+       * Вешаем событие на каждую кнопку, у которой указан
+       * атрибут [data-easy-rcoe], чтобы удалять заданный класс
+       */
+      Array.from(ey_rcoe_block_targets).forEach.call(ey_rcoe_block_targets, function (ey_rcoe_block_target) {
+        let ey_rcoe_block = ey_rcoe_block_target.getAttribute('data-easy-toggle'), // Получаем нацеленный блок
+          ey_rcoe_block_class = ey_rcoe_block_target.getAttribute('data-easy-class'); // Удаляем заданный класс
+
+        /* Если нажимаем не на активный блок, то удаляем заданный класс */
+        if (!event.target.closest(ey_rcoe_block)) {
+          try {
+            document.querySelector(ey_rcoe_block).classList.remove(ey_rcoe_block_class);
+          } catch (ey_error) {
+            console.warn('EasyToggler.js : Блок ' + ey_rcoe_block + ' не существует');
+          }
+        }
+      });
+    }
+  }
+})();
+

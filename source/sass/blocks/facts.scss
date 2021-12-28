@@ -11,4 +11,109 @@
       margin-top: 32px;
     }
   }
+
+  &__accordion-item {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #B3B4CA;
+
+    & + & {
+      margin-top: 32px;
+    }
+  }
+
+  &__accordion-title {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-family: "Rubik", sans-serif;
+    font-size: 32px;
+    line-height: 41px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 18px;
+      height: 2px;
+      background-color: #2B2D65;
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      transition: transform 0.3s ease 0s;
+    }
+
+    &::after {
+      transform: rotate(-90deg);
+    }
+
+    &._active::after {
+      transform: rotate(45deg);
+    }
+
+    &._active::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__accordion-text {
+    max-width: 570px;
+    padding-top: 25px;
+  }
+
+  &__tabs {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tabs-list {
+    display: flex;
+    flex-direction: column;
+
+    li + li {
+      margin-top: 22px;
+    }
+  }
+
+  &__tabs-btn {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #B3B4CA;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #2B2D65;
+    }
+
+    &--active {
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      color: #4E55FF;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      pointer-events: none;
+    }
+  }
+
+  &__tabs-content {
+    max-width: 745px;
+    width: 100%;
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
