@@ -8,6 +8,16 @@
     align-items: center;
   }
 
+  &__logo {
+    display: block;
+    height: 86px;
+    width: 76px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
   &__nav-list {
     max-width: 497px;
     display: flex;

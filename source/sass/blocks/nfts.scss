@@ -16,12 +16,40 @@
   }
 
   &__sliders {
+    position: relative;
     margin-top: 35px;
     min-height: 715px;
     transform: rotate(-7deg);
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../img/left-shadow.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 200%;
+      height: 200%;
+      bottom: 0;
+      left: -3%;
+      z-index: 10;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../img/right-shadow.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 150%;
+      height: 200%;
+      bottom: 0;
+      right: -3%;
+      z-index: 10;
+    }
   }
 
   &__top-slider {
+    margin-top: 28px;
     min-width: 120%;
     margin-left: -10%;
     height: 320px;
