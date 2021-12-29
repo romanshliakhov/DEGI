@@ -256,6 +256,16 @@ input[type="search"]::-webkit-search-results-decoration {
     color: #F3AC40;
     font-weight: 700;
   }
+
+  &__common {
+    color: #49CF6F;
+    font-weight: 700;
+  }
+
+  &__uncommon {
+    color: #96A2B0;
+    font-weight: 700;
+  }
 }
 
 .checkout {

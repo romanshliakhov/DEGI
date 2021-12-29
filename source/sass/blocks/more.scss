@@ -1,0 +1,19 @@
+.modal__more {
+  display: flex;
+  justify-content: space-between;
+  padding: 61px;
+  position: relative;
+
+  .modal__close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+  }
+}
+
+.modal__more-info {
+  margin-left: 65px;
+  max-width: 385px;
+  padding-top: 40px;
+  text-align: left;
+}

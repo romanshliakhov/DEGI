@@ -54,6 +54,23 @@
     }
   }
 
+  &__card-profile {
+    margin-top: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #4E55FF;
+    text-decoration: underline;
+  }
+
+  &__card-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
   &__right {
     max-width: 522px;
 
@@ -86,7 +103,7 @@
   }
 
   &__timer {
-    margin-top: 46px;
+    margin-top: 75px;
     max-width: 460px;
     color: #fff;
     background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);

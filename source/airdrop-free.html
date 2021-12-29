@@ -33,7 +33,10 @@
               <a class="nav-link" href="#">Discover</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="#">Mint NFTs</a>
+              <a class="nav__link nav__link--active" href="#">Get airdrop</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Mint NFTs</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Marketplace</a>
@@ -45,7 +48,40 @@
         </nav>
         <div class="header__btns">
           <div class="profile">Profile</div>
-          <div class="wallet" data-path="wallet">Connect wallet</div>
+          <div class="wallet wallet--connected" data-easy-toggle="#wallet" data-easy-class="open" data-easy-rcoe>0x...4b8E</div>
+          <div class="wallet__content" id="wallet">
+            <div class="wallet__tabs">
+              <ul class="wallet__tabs-list">
+                <li class="wallet__tabs-item">
+                  <button class="wallet__tabs-btn wallet__tabs-btn--active" data-tabs-path="wallet">Wallet</button>
+                </li>
+                <li class="wallet__tabs-item" >
+                  <button class="wallet__tabs-btn" data-tabs-path="history">Transactions</button>
+                </li>
+              </ul>
+              <div class="wallet__tabs-content wallet__tabs-content--active" data-tabs-target="wallet">
+                <div class="wallet__content-info">
+                  <div class="wallet__content-adress">
+                    <div class="wallet__content-title">My address</div>
+                    <div class="wallet__content-details">
+                      <span class="wallet__adress" >0x77D1a9b1c4F5F3317d6</span>
+                      <img src="img/sprite/copy.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="wallet__content-adress">
+                    <div class="wallet__content-title">Balance</div>
+                    <div class="wallet__content-details"><span class="wallet__balance">0.000 BNB</span></div>
+                  </div>
+                </div>
+                <button class="disconnect">Disconnect wallet</button>
+              </div>
+              <div class="wallet__tabs-content" data-tabs-target="history">
+                <div class="wallet__content-info">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ut excepturi perspiciatis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -53,28 +89,24 @@
 
   <main>
     <section class="head">
-      <div class="head__title subtitle">Mint & Farm 5,000 unique DEGY NFTs</div>
+      <div class="head__title subtitle">100,000 NFTs in a public airdrop from DEGY</div>
       <div class="head__info">
         <ul class="head__list">
           <li class="head__item">
-            <div class="head__item-count descr">5000</div>
+            <div class="head__item-count descr">100,000</div>
             <div class="head__item-status">are left</div>
           </li>
           <li class="head__item">
-            <div class="head__item-count head__item-count--uncommon descr">1,000</div>
+            <div class="head__item-count head__item-count--common descr">70,000</div>
+            <div class="head__item-status card__status common">common</div>
+          </li>
+          <li class="head__item">
+            <div class="head__item-count head__item-count--uncommon descr">25,000</div>
             <div class="head__item-status card__status uncommon">uncommon</div>
           </li>
           <li class="head__item">
-            <div class="head__item-count head__item-count--rare descr">2,950 <span>farm</span></div>
+            <div class="head__item-count head__item-count--rare descr">5,000 <span>farm</span></div>
             <div class="head__item-status card__status rare">rare</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--epic descr">1,000 <span>farm</span></div>
-            <div class="head__item-status card__status epic">epic</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--legendary descr">50 <span>farm</span></div>
-            <div class="head__item-status card__status legendary">legendary</div>
           </li>
         </ul>
       </div>
@@ -102,17 +134,25 @@
               </div>
             </div>
 
-            <button class="card__btn" data-path="wallet">connect wallet</button>
+            <button class="card__btn">MINT more FOR BNB</button>
           </div>
+
           <div class="content__right">
             <div class="content__info">
-              <div class="descr">...mint presale started!</div>
-              <div class="text">MINT collection Delivery Guy allows you not only to get the rarest NFT, but also DEGY tokens, which will accumulate on the account from each NFT of <span class="text__rare">Rare</span>,
-                <span class="text__epic">Epic</span> and <span class="text__legendary">Legendary</span> rarities.</div>
+              <div class="descr">...free mint started!</div>
+              <div class="text">The Airdrop of the Delivery Guys collection makes it possible to get a unique NFT with the rarity of <span class="text__common">Common</span>, <span class="text__uncommon">Uncommon</span> and <span class="text__rare">Rare</span>. <br> At the same time, the rarity of the “Rare" collection and higher makes it possible to farm DEGY.IO tokens, which is limited in time.</div>
               <button class="content__more" data-path="farm">
                 <span>More about FARM</span>
                 <img src="img/sprite/question.svg" alt="">
               </button>
+            </div>
+
+            <div class="referral">
+              <div class="referral__top">
+                <div class="referral__title">Use referral to get more free NFTs</div>
+                <div class="referral__status"><span>0/5</span></div>
+              </div>
+              <button class="referral__btn" type="button">deliverygus.?ref=0x77D1a9b1c4F5F3sskjjk6765a7shhjhajbxn...</button>
             </div>
           </div>
         </div>
@@ -197,6 +237,78 @@
         <div class="modal__farm-info">
           <div class="descr">FARM NFTs</div>
           <div class="text">The NFT collection has the ability to farm tokens before their official listing, the Rare, Epic and Legendary rarities give NFT the opportunity to farm. Farming is possible for a period of 60 days, during this period, each account storing NFA receives daily DEGY tokens, which will be credited before listing the token for public access.</div>
+        </div>
+			</div>
+		</div>
+
+    <div class="modal__container" data-animation="fade" data-speed="300" data-target="more">
+			<div class="modal__more more">
+        <div class="modal__close modal-close">
+          <svg  width='16' height='16'>
+          <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </div>
+
+        <div class="modal__more-content">
+          <div class="content__card card">
+            <div class="card__image">
+              <picture>
+                <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+              </picture>
+            </div>
+            <div class="card__info">
+              <div class="card__series">Delivery guys</div>
+              <div class="card__title">Delivery Guy #12001</div>
+              <div class="card__divider"></div>
+              <div class="card__footer">
+                <div class="card__status uncommon">uncommon</div>
+                <div class="card__price">0,989</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__more-info">
+          <div class="descr">FARM NFTs</div>
+          <div class="text">The NFT collection has the ability to farm tokens before their official listing, the Rare, Epic and Legendary rarities give NFT the opportunity to farm. Farming is possible for a period of 60 days, during this period, each account storing NFA receives daily DEGY tokens, which will be credited before listing the token for public access.</div>
+        </div>
+			</div>
+		</div>
+
+    <div class="modal__container" data-animation="fade" data-speed="300" data-target="mint">
+			<div class="modal__mint">
+        <div class="modal__head">
+          <div class="modal__title">Confirmation</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__inner-mint">
+          <div class="modal__text">Delivery Guys <span class="series">#random</span></div>
+          <div class="modal__text">Quantity:<span class="quantity">8</span></div>
+
+          <ul class="modal__mint-total">
+            <li class="modal__mint-line">
+              <div class="modal__text">Total</div>
+              <div class="modal__total-checkout">
+                <div class="card__price">0,15</div>
+                <div class="modal__total-price">(-79,92$)</div>
+              </div>
+            </li>
+            <li class="modal__mint-line">
+              <div class="modal__text">BNB in wallet</div>
+              <div class="modal__total-checkout">
+                <div class="card__total-price card__price">10,15</div>
+                <div class="modal__total-price">(-189,92$)</div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="checkout">Checkout</button>
         </div>
 			</div>
 		</div>

@@ -1,0 +1,75 @@
+.referral {
+  margin-top: 130px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E5E8F3;
+  border-radius: 12px;
+
+  &__top {
+    height: 62px;
+    border-bottom: 1px solid #E5E8F3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+  }
+
+  &__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+  }
+
+  &__status {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../img/referral.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 27px;
+      top: -2px;
+      left: -20px;
+    }
+
+    span {
+      font-size: 16px;
+      line-height: 27px;
+      color: #B3B4CA;
+    }
+
+    &--done {
+      span {
+        font-weight: 700;
+        color: #2B2D65;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    padding: 24px 43px 24px 32px;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.9667 3.85714V1.68571C13.9667 1.50385 13.895 1.32944 13.7675 1.20084C13.64 1.07224 13.467 1 13.2867 1H2.18C1.99965 1 1.82669 1.07224 1.69917 1.20084C1.57164 1.32944 1.5 1.50385 1.5 1.68571V12.8857C1.5 13.0676 1.57164 13.242 1.69917 13.3706C1.82669 13.4992 1.99965 13.5714 2.18 13.5714H6.03334' stroke='%232B2D65' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M17.8199 16.9999H6.7132C6.53286 16.9999 6.3599 16.9277 6.23237 16.7991C6.10485 16.6705 6.0332 16.496 6.0332 16.3142V5.11418C6.0332 4.93232 6.10485 4.7579 6.23237 4.62931C6.3599 4.50071 6.53286 4.42847 6.7132 4.42847H17.8199C18.0002 4.42847 18.1732 4.50071 18.3007 4.62931C18.4282 4.7579 18.4999 4.93232 18.4999 5.11418V16.3142C18.4999 16.496 18.4282 16.6705 18.3007 16.7991C18.1732 16.9277 18.0002 16.9999 17.8199 16.9999Z' stroke='%232B2D65' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
