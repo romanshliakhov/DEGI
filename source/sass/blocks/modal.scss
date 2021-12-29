@@ -89,8 +89,8 @@
 .modal__wallet {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 430px;
+  max-width: 300px;
+  min-height: 430px;
 }
 
 .modal__head {
@@ -123,6 +123,10 @@
   justify-content: center;
   width: 115px;
   height: 75px;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .modal__text {
@@ -145,8 +149,92 @@
   line-height: 24px;
 }
 
+.modal__more {
+  display: flex;
+  justify-content: space-between;
+  padding: 61px;
+  position: relative;
 
+  .modal__close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+  }
+}
 
+.modal__more-info {
+  margin-left: 65px;
+  max-width: 385px;
+  padding-top: 40px;
+  text-align: left;
+}
+
+.modal__mint {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-height: 420px;
+}
+
+.modal__inner-mint {
+  border-top: 1px solid #E5E8F3;
+  padding: 18px 24px;
+  text-align-last: left;
+  font-size: 14px;
+  line-height: 24px;
+  color: #B3B4CA;
+
+  .modal__text {
+    margin-bottom: 8px;
+    font-weight: 400;
+
+    span {
+      margin-left: 5px;
+      font-weight: 700;
+      color: #2B2D65;
+    }
+  }
+}
+
+.modal__mint-total {
+  margin: 26px 0;
+  width: 250px;
+  min-height: 142px;
+  padding: 18px;
+  background: #F8F9FD;
+  border: 1px solid #E5E8F3;
+  border-radius: 12px;
+
+  li + li {
+    margin-top: 20px;
+  }
+}
+
+.modal__mint-line {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.modal__total-checkout {
+  min-width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  .card__price {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2B2D65;
+  }
+}
+
+.modal__total-price {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
 
 
 

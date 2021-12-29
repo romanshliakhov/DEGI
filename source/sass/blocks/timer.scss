@@ -2,6 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  padding: 16px 45px;
+  height: 98px;
+  border-radius: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/sprite/clock.svg');
+    width: 51px;
+    height: 51px;
+    left: -25px;
+    top: -20px;
+    transform: rotate(-21deg);
+  }
 
   &__count-content {
     display: flex;

@@ -42,23 +42,22 @@
     justify-content: space-between;
   }
 
-  &__timer {
-    padding: 16px 45px;
-    height: 98px;
-    background-color: #FFFFFF;
-    border-radius: 18px;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url('../img/sprite/clock.svg');
-      width: 51px;
-      height: 51px;
-      left: -25px;
-      top: -20px;
-      transform: rotate(-21deg);
+  &__block-head {
+    .title {
+      padding-top: 0;
     }
+  }
+
+  &__block-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #F4F4F9;
+  }
+
+  &__timer {
+    background-color: #FFFFFF;
   }
 
   &__details {
@@ -113,5 +112,50 @@
     line-height: 15px;
     font-weight: 500;
     color: #fff;
+  }
+
+  &__content {
+    margin-top: 78px;
+    max-width: 365px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+    background: #FFFFFF;
+    border-radius: 18px;
+  }
+
+  &__content-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+
+  &__content-text {
+    margin-top: 6px;
+    max-width: 216px;
+    text-align: center;
+  }
+
+  &__content-btn {
+    margin-top: 30px;
+    width: 250px;
+    height: 58px;
+    background: linear-gradient(92.05deg, #FFAB5D 7.98%, #FEE97B 131.44%);
+    border-radius: 8px;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 11px rgba(100, 81, 59, 0.43);
+    transition: opacity 0.5s ease-in;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

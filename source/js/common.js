@@ -47,6 +47,25 @@ let nftsSliderBot = new Swiper('.nfts__bot-slider', {
   },
 });
 
+let mintSlider = new Swiper('.content__minted-slider', {
+  slidesPerView: 2,
+  slidesPerColumn: 2,
+  slidesPerGroup: 4,
+  autoHeight: false,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".content__arrow-next",
+    prevEl: ".content__arrow-prev",
+  },
+});
+
 // wallet tabs
 document.addEventListener('DOMContentLoaded', () => {
 	const tabs = document.querySelector('.wallet__tabs');

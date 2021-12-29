@@ -1,0 +1,277 @@
+.content {
+  padding: 180px 0 55px;
+
+  &__inner {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 410px;
+    width: 100%;
+    min-height: 625px;
+    background-color: #fff;
+    border: 1px solid #E5E8F3;
+    border-radius: 18px;
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card {
+    min-width: 280px;
+    min-height: 393px;
+    padding: 10px;
+
+    .card__image {
+      max-width: 100%;
+      max-height: 260px;
+    }
+
+    .card__info {
+      padding-top: 12px;
+    }
+
+    .card__series {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .card__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .card__divider {
+      margin-top: 12px;
+    }
+
+    .card__footer {
+      margin-top: 21px;
+    }
+  }
+
+  &__right {
+    max-width: 522px;
+
+  }
+
+  &__info {
+    max-width: 490px;
+    padding-top: 63px;
+  }
+
+  &__more {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    transition: all 0.3s ease;
+
+    img {
+      margin-left: 5px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__timer {
+    margin-top: 46px;
+    max-width: 460px;
+    color: #fff;
+    background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
+  }
+
+  &__congrats {
+    margin-top: 100px;
+    width: 100%;
+    height: 209px;
+    background: #FFFFFF;
+    border: 1px solid #E5E8F3;
+    border-radius: 12px;
+    padding: 32px;
+  }
+
+  &__congrats-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+  }
+
+  &__congrats-text {
+    margin-top: 8px;
+    max-width: 390px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__congrats-btns {
+    margin-top: 26px;
+    max-width: 311px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__congrats-btn {
+    padding: 12px 17px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #B3B4CA;
+    border: 1px solid #B3B4CA;
+    border-radius: 8px;
+    transition: opacity 0.1s step-end;
+
+    &--more {
+      font-weight: 500;
+      border: transparent;
+      color: #fff;
+      background: linear-gradient(92.05deg, #FFAB5D 7.98%, #FEE97B 131.44%);
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__minted {
+    max-width: 410px;
+    width: 100%;
+    min-height: 625px;
+    background-color: #fff;
+    border: 1px solid #E5E8F3;
+    border-radius: 18px;
+    padding: 38px 36px 44px 36px;
+  }
+
+  &__minted-title {
+    line-height: 21px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__minted-box {
+    margin-top: 28px;
+    width: 100%;
+    position: relative;
+  }
+
+  &__minted-slider {
+    height: 478px;
+  }
+
+  &__minted-slide {
+    .card {
+      padding: 5px;
+      max-width: 160px;
+      box-sizing: border-box;
+      box-shadow: none;
+      border: 1px solid rgba(217, 221, 240, 0.61);
+    }
+
+    .card__image {
+      max-width: 150px;
+      max-height: 150px;
+    }
+
+    .card__info {
+      padding-top: 7px;
+    }
+
+    .card__series {
+      font-size: 7px;
+      line-height: 9px;
+    }
+
+    .card__title {
+      font-size: 10px;
+      line-height: 14px;
+    }
+
+    .card__divider {
+      margin-top: 7px;
+    }
+
+    .card__footer {
+      margin-top: 7px;
+    }
+
+    .card__status {
+      font-size: 7px;
+      line-height: 7px;
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: -35px;
+    width: 120px;
+    height: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__arrow {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #B3B4CA;
+    cursor: pointer;
+
+
+    &:hover {
+      transform: scale(1.3);
+      transition: all 0.5s ease-in-out;
+      transition-duration: 0.5s;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L5.53033 4.46967C5.67098 4.61032 5.75 4.80109 5.75 5C5.75 5.19891 5.67098 5.38968 5.53033 5.53033L1.53033 9.53033C1.23744 9.82322 0.762563 9.82322 0.46967 9.53033C0.176777 9.23744 0.176777 8.76256 0.46967 8.46967L3.93934 5L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967Z' fill='%23B3B4CA'/%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 6px;
+      height: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__arrow-prev::before {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+}
+
+.content__minted-slide.swiper-slide {
+  height: calc((100% - 20px) / 2);
+  overflow: hidden;
+}
+
+.swiper-pagination-fraction {
+  width: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}

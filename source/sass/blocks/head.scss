@@ -1,0 +1,91 @@
+.head {
+  position: relative;
+  background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
+  min-height: 400px;
+  text-align: center;
+
+  &__title {
+    padding-top: 98px;
+    max-width: 640px;
+    color: #fff;
+    margin: 0 auto;
+  }
+
+  &__info {
+    position: absolute;
+    left: 50%;
+    bottom: -80px;
+    transform: translateX(-50%);
+    max-width: 1075px;
+    width: 100%;
+    min-height: 160px;
+    background-color: #fff;
+    box-shadow: 0px 45px 92px rgba(104, 157, 219, 0.09);
+    border-radius: 18px;
+    padding: 43px 80px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-count {
+    position: relative;
+
+    &--uncommon {
+      color: #49CF6F;
+    }
+
+    &--rare {
+      color: #46D1E5;
+    }
+
+    &--epic {
+      color: #E562DF;
+    }
+
+    &--legendary {
+      color: #F3AC40;
+    }
+
+    span {
+      position: absolute;
+      top: -10px;
+      right: -20px;
+      display: block;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-shadow: 2px 1px 3px rgba(212, 160, 123, 0.34);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(92.05deg, #FFAB5D 7.98%, #FEE97B 131.44%);
+      text-transform: uppercase;
+      transform: rotate(16.39deg);
+    }
+  }
+
+  &__item-status {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 600;
+
+    &:first-child {
+      font-family: "Rubik", sans-serif;
+      font-size: 16px;
+      line-height: 21px;
+      color: #B3B4CA;
+    }
+  }
+}
+
