@@ -18,6 +18,7 @@
 
     &:first-child {
       justify-content: flex-end;
+      padding-right: 90px;
 
       .details__info {
         padding-top: 90px;
@@ -46,7 +47,7 @@
 
   &__image {
     position: absolute;
-    right: 0;
+    right: 40px;
     width: 335px;
     height: 338px;
     padding: 12px;

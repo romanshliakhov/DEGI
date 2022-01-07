@@ -14,6 +14,48 @@
 .modal__more-info {
   margin-left: 65px;
   max-width: 385px;
-  padding-top: 40px;
+  padding-top: 60px;
   text-align: left;
+}
+
+.modal__info-list {
+  margin-top: 30px;
+  padding-left: 20px;
+
+  li + li {
+    margin-top: 20px;
+  }
+}
+
+.modal__info-item {
+  list-style: decimal;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.modal__calculator  {
+  margin-top: 150px;
+
+  .text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .card__price {
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 39px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      left: -25px;
+    }
+  }
+
+  .card__calculator-content {
+    margin-top: 20px;
+  }
 }

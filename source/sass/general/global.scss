@@ -52,7 +52,8 @@ p {
 }
 
 ul,
-li {
+li,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -308,4 +309,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .rare {
   background-color: #46D1E5;
+}
+
+
+.arrow__mint {
+  margin-top: 30px;
+
+  img {
+    width: 44px;
+    height: 24px;
+  }
 }

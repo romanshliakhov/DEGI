@@ -134,17 +134,16 @@
               </div>
             </div>
 
-            <button class="card__btn">MINT more FOR BNB</button>
+            <button class="card__btn" data-path="more">MINT more FOR BNB</button>
           </div>
 
           <div class="content__right">
             <div class="content__info">
               <div class="descr">...free mint started!</div>
               <div class="text">The Airdrop of the Delivery Guys collection makes it possible to get a unique NFT with the rarity of <span class="text__common">Common</span>, <span class="text__uncommon">Uncommon</span> and <span class="text__rare">Rare</span>. <br> At the same time, the rarity of the “Rare" collection and higher makes it possible to farm DEGY.IO tokens, which is limited in time.</div>
-              <button class="content__more" data-path="farm">
-                <span>More about FARM</span>
-                <img src="img/sprite/question.svg" alt="">
-              </button>
+              <div class="arrow__mint">
+                <img src="img/arrow-mint.svg" alt="">
+              </div>
             </div>
 
             <div class="referral">
@@ -250,28 +249,306 @@
         </div>
 
         <div class="modal__more-content">
-          <div class="content__card card">
-            <div class="card__image">
-              <picture>
-                <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-              </picture>
-            </div>
-            <div class="card__info">
-              <div class="card__series">Delivery guys</div>
-              <div class="card__title">Delivery Guy #12001</div>
-              <div class="card__divider"></div>
-              <div class="card__footer">
-                <div class="card__status uncommon">uncommon</div>
-                <div class="card__price">0,989</div>
+          <div class="modal__content-card modal__content-card--over">
+            <!-- Если одна карточка -->
+            <!-- <div class="modal__content-one">
+              <div class="content__card card">
+                <div class="card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                    <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                  </picture>
+                </div>
+                <div class="card__info">
+                  <div class="card__series">Delivery guys</div>
+                  <div class="card__title">Delivery Guy #12001</div>
+                  <div class="card__divider"></div>
+                  <div class="card__footer">
+                    <div class="card__status uncommon">uncommon</div>
+                    <div class="card__price">0,15</div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </div> -->
+
+            <!-- От 2х-4х карточек -->
+            <!-- <div class="modal__content-less">
+              <div class="modal__less-slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="content__less-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__less-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__less-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__less-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__arrows">
+                <div class="content__arrow content__arrow-prev"></div>
+                <div class="content__arrow content__arrow-next"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div> -->
+
+            <!-- От 4х карточек -->
+            <div class="modal__content-over">
+              <div class="modal__over-slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="content__over-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__over-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__over-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__over-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__over-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__over-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__over-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__over-slide swiper-slide">
+                    <div class="content__card card">
+                      <div class="card__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                          <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                        </picture>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__series">Delivery guys</div>
+                        <div class="card__title">Delivery Guy #12001</div>
+                        <div class="card__divider"></div>
+                        <div class="card__footer">
+                          <div class="card__status uncommon">uncommon</div>
+                          <div class="card__price">0,15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__arrows">
+                <div class="content__arrow content__arrow-prev"></div>
+                <div class="content__arrow content__arrow-next"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div> 
           </div>
         </div>
 
         <div class="modal__more-info">
-          <div class="descr">FARM NFTs</div>
-          <div class="text">The NFT collection has the ability to farm tokens before their official listing, the Rare, Epic and Legendary rarities give NFT the opportunity to farm. Farming is possible for a period of 60 days, during this period, each account storing NFA receives daily DEGY tokens, which will be credited before listing the token for public access.</div>
+          <div class="descr">Mint NFT for BNB</div>
+          <ol class="modal__info-list">
+            <li class="modal__info-item">Choose the amount of NFTs you want to mint</li>
+            <li class="modal__info-item">Press the <span>“MINT”</span> button and get your NFTs</li>
+          </ol>
+
+          <div class="modal__calculator card__calculator">
+            <div class="card__nft-price">
+              <div class="text">Price:</div>
+              <div class="card__price">0,15</div>
+            </div>
+
+            <div class="card__calculator-content">
+              <div class="card__calculator-box">
+                <div class="card__calculator-board card__calculator-plus">-</div>
+                <div class="card__calculator-board card__calculator-count">8</div>
+                <div class="card__calculator-board card__calculator-plus">+</div>
+              </div>
+              <button class="card__calculator-btn card__btn" data-path="mint">MINT</button>
+            </div>
+          </div>
         </div>
 			</div>
 		</div>

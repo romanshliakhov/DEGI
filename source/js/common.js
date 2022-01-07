@@ -66,6 +66,52 @@ let mintSlider = new Swiper('.content__minted-slider', {
   },
 });
 
+let airdropSlider = new Swiper('.content__slider', {
+  slidesPerView: '1',
+  loop: true,
+  autoplay: {
+    delay: 4000
+  },
+});
+
+let modalSliderLess = new Swiper('.modal__less-slider', {
+  slidesPerView: 1,
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".content__arrow-next",
+    prevEl: ".content__arrow-prev",
+  },
+});
+
+let modalSliderOver = new Swiper('.modal__over-slider', {
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  slidesPerView: 2,
+  slidesPerColumn: 2,
+  slidesPerGroup: 4,
+  autoHeight: false,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".content__arrow-next",
+    prevEl: ".content__arrow-prev",
+  },
+});
+
+
 // wallet tabs
 document.addEventListener('DOMContentLoaded', () => {
 	const tabs = document.querySelector('.wallet__tabs');
@@ -457,7 +503,7 @@ const modal = new Modal({
 
 // timer
 document.addEventListener('DOMContentLoaded', () => {
-	const newYear = new Date('jan 01 2022 00:00:00');
+	const newYear = new Date('feb 01 2022 00:00:00');
 
 	const daysVal = document.querySelector('.timer__count-days .timer__count-val');
 	const hoursVal = document.querySelector('.timer__count-hours .timer__count-val');
@@ -476,7 +522,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hours = 0;
       minutes = 0;
     } else {
-      daysVal.textContent = ('0' + days);
+      daysVal.textContent = (days);
       hoursVal.textContent = ('0' + hours).slice(-2);
       minutesVal.textContent = ('0' + minutes).slice(-2);
     }

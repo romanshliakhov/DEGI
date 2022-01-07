@@ -1,6 +1,31 @@
-// @media (min-width: 1000px) and (max-width: 1600px) {
+@media (max-width: 1400px) {
+  .container,
+  .container__small {
+    padding: 0 30px;
+  }
 
-// }
+  .discover__inner {
+    padding: 0 30px;
+  }
+
+  .details__block {
+    &:first-child {
+      padding-right: 0;
+    }
+  }
+
+  .details__image {
+    right: 0;
+  }
+
+  .roadmap::before {
+    width: 88%;
+  }
+
+  .features__inner {
+    justify-content: space-around;
+  }
+}
 
 
 
