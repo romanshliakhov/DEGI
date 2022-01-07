@@ -27,7 +27,808 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .timer {
+    padding: 16px 10px;
+    justify-content: space-evenly;
+  }
+
+  .timer__text {
+    font-size: 13px;
+  }
+
+  .timer__count-separator {
+    margin: 0 5px;
+  }
+
+  .about__inner {
+    min-height: 635px;
+  }
+
+  .nfts {
+    min-height: 1065px;
+  }
+
+  .nfts__sliders::before {
+    left: -5%;
+    bottom: -10%;
+  }
+
+  .nfts__sliders::after {
+    width: 300%;
+    right: -50%;
+  }
+
+  .features__info {
+    max-width: 450px;
+  }
+
+  .features__image .card {
+    box-shadow: 35px -35px 10px -10px rgba(255, 255, 255, 0.87);
+  }
+
+  .details__inner {
+    padding: 0 30px;
+  }
+
+  .features {
+    padding: 75px 0;
+  }
+
+  .details {
+    padding: 115px 0;
+  }
+
+  .roadmap {
+    padding: 80px 0;
+  }
+
+  .roadmap::before {
+    width: 128%;
+    left: 0;
+  }
+
+  .facts {
+    padding: 80px 0;
+  }
+
+  .discover__content {
+    margin-top: 40px;
+  }
+
+  .head {
+    min-height: 350px;
+  }
+
+  .head__title {
+    padding-top: 65px;
+  }
+
+  .head__info {
+    width: 95%;
+  }
+
+  .content {
+    padding: 140px 0 55px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header__nav {
+    display: none;
+  }
+
+  .discover__inner {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .discover__block-head {
+    padding: 20px 0;
+  }
+
+  .discover__block-subtitle {
+    text-align: center;
+  }
+
+  .discover__content {
+    margin: 20px auto 0;
+    padding: 32px;
+  }
+
+  .discover__inner--connected .discover__card:last-child {
+    top: 35px;
+  }
+
+  .discover__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .discover__block + .discover__block {
+      margin-top: 40px;
+    }
+  }
+
+  .discover__block {
+    min-height: 433px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .discover__info {
+    margin-top: 30px;
+    max-width: 500px;
+  }
+
+  .title {
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .discover__cards {
+    height: 433px;
+  }
+
+  .discover__card:first-child {
+    top: 35px;
+    left: 40px;
+  }
+
+  .about__inner {
+    min-height: 500px;
+  }
+
+  .about__descr {
+    max-width: 365px;
+  }
+
+  .about__info {
+    margin-top: 40px;
+  }
+
+  .about__image:first-child {
+    top: 0;
+  }
+
+  .about__image:nth-child(2) {
+    top: -10px;
+    right: 20px;
+  }
+
+  .about__image:nth-child(3) {
+    top: -15px;
+    left: -20px;
+  }
+
+  .about__info-image {
+    width: 306px;
+  }
+
+  .about__image:last-child {
+    display: none;
+  }
+
+  .nfts {
+    min-height: 965px;
+  }
+
+  .nfts__sliders::before {
+    left: -10%;
+  }
+
+  .features {
+    padding: 50px 0;
+  }
+
+  .features__inner {
+    justify-content: space-between;
+  }
+
+  .features__info {
+    max-width: 360px;
+  }
+
+  .features__details {
+    margin-top: 50px;
+
+    .text {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .features__image {
+    .card {
+      min-width: 290px;
+    }
+  }
+
+  .features__down {
+    margin-top: 25px;
+  }
+
+  .features__nft-status {
+    margin-top: 25px;
+  }
+
+  .details {
+    padding: 40px 0;
+  }
+
+  .details__inner {
+    min-height: 585px;
+  }
+
+  .details__block:first-child {
+    justify-content: space-around;
+
+    .details__info {
+      padding-top: 30px;
+      max-width: 440px;
+      padding-bottom: 40px;
+    }
+
+    .details__image {
+      margin-right: 40px;
+    }
+  }
+
+  .details__block:last-child {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    .details__info {
+      padding-bottom: 30px;
+      max-width: 355px;
+    }
+
+    .details__image {
+      margin-left: 40px;
+      bottom: -71px;
+    }
+  }
+
+  .details__image {
+    position: relative;
+    width: 230px;
+    height: 240px;
+  }
+
+  .roadmap {
+    padding: 40px 0;
+  }
+
+  .roadmap::before {
+    display: none;
+  }
+
+  .roadmap__way:first-child {
+    flex-direction: column-reverse;
+    align-items: baseline;
+  }
+
+  .roadmap__title {
+    margin-bottom: 30px;
+  }
+
+  .roadmap__way+.roadmap__way {
+    margin-top: 75px;
+  }
+
+  .facts__tabs-content {
+    max-width: 550px;
+  }
+
+  .facts__accordion-title {
+    font-size: 30px;
+  }
+
+  .footer {
+    padding: 25px 0;
+  }
+
+  .footer__logo {
+    height: 65px;
+  }
+
+  .footer__info {
+    margin-top: 10px;
+  }
+
+  .modal__container {
+    width: 90%;
+  }
+
+  .content__left {
+    max-width: 340px;
+    padding: 30px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .content__right {
+    max-width: 355px;
+  }
+
+  .container__content {
+    max-width: 100%;
+  }
+
+  .content__minted {
+    max-width: 370px;
+    padding: 38px 15px 44px;
+    margin-right: 25px;
+  }
+
+  .content__congrats {
+    margin-top: 50px;
+  }
+
+  .content__congrats-btns {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .content__congrats-text {
+    max-width: 100%;
+  }
+
+  .content__congrats-btn {
+    width: 100%;
+
+    &--more {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .subtitle {
+    font-size: 46px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  .discover__info {
+    width: 100%;
+  }
+
+  .discover__cards {
+    width: 100%;
+  }
+
+  .discover__card:first-child {
+    left: 15px;
+  }
+
+  .discover__card:last-child {
+    right: 15px;
+  }
+
+  .discover__scroll {
+    bottom: 65px;
+  }
+
+  .about__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__descr {
+    margin-top: 30px;
+    max-width: 100%;
+
+    .text {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .descr {
+    text-align: center;
+  }
+
+  .features__info {
+    max-width: 100%;
+  }
+
+  .features__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features__image {
+    margin-top: 50px;
+
+    .card {
+      min-width: 375px;
+    }
+  }
+
+  .roadmap__title {
+    width: 100%;
+  }
+
+  .facts__tabs-content {
+    max-width: 355px;
+  }
+
+  .facts__tabs {
+    margin-top: 40px;
+    min-height: 400px;
+  }
+
+  .facts__accordion-title {
+    font-size: 18px;
+    line-height: 24px;
+
+    &::before,
+    &::after {
+      top: 10px;
+    }
+  }
+
+  .facts__accordion-text {
+    br {
+      display: none;
+    }
+  }
+
+  .footer__nav {
+    max-width: 265px;
+
+    li + li {
+      margin-left: 20px;
+    }
+  }
+
+  .details__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details__block:last-child {
+    flex-direction: column;
+    align-items: center;
+
+    .details__image {
+      margin-left: 0;
+      bottom: 0;
+    }
+
+    .details__info {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+  }
+
+  .head {
+    min-height: 300px;
+  }
+
+  .head__info {
+    padding: 43px 10px;
+  }
+
+  .content__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content__more {
+    margin: 20px auto 0;
+  }
+
+  .content__left {
+    min-height: 560px;
+  }
+
+  .content__right {
+    max-width: 100%;
+  }
+
+  .content__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content__timer {
+    margin: 40px auto 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .container,
+  .container__small {
+    padding: 0 10px;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .discover__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .timer__count-content {
+    line-height: 50px;
+  }
+
+  .discover__card:first-child,
+  .discover__card:last-child {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .about__info-image {
+    align-items: center;
+    width: 285px;
+  }
+
+  .about__image:nth-child(2) {
+    display: none;
+  }
+
+  .descr {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .nfts__sliders::before,
+  .nfts__sliders::after {
+    display: none;
+  }
+
+  .features__details {
+    margin-top: 30px;
+  }
+
+  .features__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      min-width: auto;
+      min-height: 335px;
+    }
+
+    .card__image {
+      min-height: 211px;
+    }
+
+    .card__series {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .card__title {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .card__divider {
+      margin-top: 10px;
+    }
+
+    .card__footer {
+      margin-top: 10px;
+    }
+
+    .card__status {
+      font-size: 10px;
+      line-height: 10px;
+    }
+
+    .card__price {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .details__info {
+    width: 100%;
+
+    .text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .details__block:first-child .details__info {
+    padding: 20px 0 30px;
+    width: 100%;
+  }
+
+  .details__block:first-child .details__image {
+    margin-right: 0;
+  }
+
+  .text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .roadmap {
+    padding: 0;
+  }
+
+  .roadmap__way-items {
+    justify-content: space-evenly;
+  }
+
+  .roadmap__way-item {
+    width: 135px;
+  }
+
+  .facts {
+    padding: 30px 0;
+  }
+
+  .facts__tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .facts__tabs-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    li + li {
+      margin-top: 0;
+      margin-left: 25px;
+    }
+  }
+
+  .facts__accordion-title {
+    font-size: 15px;
+  }
+
+  .facts__accordion-text {
+    font-size: 14px;
+  }
+
+  .footer__logo {
+    margin: 0 auto;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__nav {
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    li + li {
+      margin-left: 0;
+    }
+
+    .nav__item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .footer__socials-info {
+    width: 90%;
+    text-align: center;
+  }
+
+  .footer__bot {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .footer__terms {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .discover__content {
+    padding: 10px;
+  }
+
+  .discover__content-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .content {
+    padding: 110px 0 50px;
+  }
+
+  .head__info {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+  }
+
+  .head__list {
+    flex-direction: column;
+
+    li + li {
+      margin-top: 30px;
+    }
+  }
+
+  .content__card {
+    min-width: 250px;
+    min-height: 375px;
+  }
+
+  .card__btn {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .content__minted {
+    margin-right: 0;
+  }
+
+  .content__minted-slide .card {
+    margin: 0 auto;
+  }
+
+  .referral {
+    margin-top: 50px;
+  }
+
+  .referral__top {
+    padding: 0 10px;
+  }
+
+  .referral__title {
+    max-width: 200px;
+  }
+
+  .referral__btn {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    padding: 24px 45px 24px 17px;
+  }
+
+  .referral__btn::before {
+    right: 15px;
+  }
 
 
+}
 
 

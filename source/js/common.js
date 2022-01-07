@@ -64,6 +64,20 @@ let mintSlider = new Swiper('.content__minted-slider', {
     nextEl: ".content__arrow-next",
     prevEl: ".content__arrow-prev",
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerGroup: 4,
+      autoHeight: false,
+    },
+    320: {
+      slidesPerView: 1,
+      slidesPerColumn: 2,
+      slidesPerGroup: 1,
+      autoHeight: false,
+    }
+  }
 });
 
 let airdropSlider = new Swiper('.content__slider', {
@@ -526,8 +540,6 @@ document.addEventListener('DOMContentLoaded', () => {
       hoursVal.textContent = ('0' + hours).slice(-2);
       minutesVal.textContent = ('0' + minutes).slice(-2);
     }
-
-
 	};
 
 	timeCount();
@@ -598,3 +610,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 })();
 
+// counter
+
+const counter = function () {
+  const btns = document.querySelectorAll('.counter__btn');
+
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const direction = this.dataset.direction;
+      const inp = this.parentElement.querySelector('.counter__value');
+      const currentValue = +inp.value;
+      let newValue;
+
+      if (direction === 'plus') {
+        newValue = currentValue + 1;
+      } else {
+        newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+      }
+
+      inp.value = newValue;
+    });
+  });
+};
+
+counter();

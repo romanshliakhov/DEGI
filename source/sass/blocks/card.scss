@@ -25,8 +25,8 @@
   }
 
   &__image {
-    max-height: 211px;
-    max-width: 211px;
+    min-height: 211px;
+    min-width: 211px;
     border-radius: 14px;
   }
 
@@ -197,6 +197,7 @@
     line-height: 24px;
     font-weight: 500;
     cursor: pointer;
+    text-align: center;
   }
 
   &__calculator-btn {

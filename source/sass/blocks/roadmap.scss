@@ -50,6 +50,10 @@
     text-align: center;
     background-color: #F8F9FD;
     z-index: 10;
+
+    &--now {
+      border: 1px solid #4e55ff ;
+    }
   }
 
   &__way-image {

@@ -24,6 +24,12 @@
 
     &--connected {
       background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
+
+      .discover__card:last-child {
+        bottom: 0;
+        top: 100px;
+        right: 20px;
+      }
     }
   }
 
