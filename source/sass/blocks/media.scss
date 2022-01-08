@@ -339,10 +339,6 @@
     margin-top: 10px;
   }
 
-  .modal__container {
-    width: 90%;
-  }
-
   .content__left {
     max-width: 340px;
     padding: 30px;
@@ -386,6 +382,19 @@
     &--more {
       margin-bottom: 20px;
     }
+  }
+
+  .modal__container-farm,
+  .modal__container-more {
+    width: 90%;
+  }
+
+  .referral {
+    margin-top: 50px;
+  }
+
+  .modal__farm {
+    padding: 30px;
   }
 }
 
@@ -802,10 +811,6 @@
 
   .content__minted-slide .card {
     margin: 0 auto;
-  }
-
-  .referral {
-    margin-top: 50px;
   }
 
   .referral__top {

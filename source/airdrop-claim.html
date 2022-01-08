@@ -209,7 +209,7 @@
 			</div>
 		</div>
 
-    <div class="modal__container" data-animation="fade" data-speed="300" data-target="farm">
+    <div class="modal__container modal__container-farm" data-animation="fade" data-speed="300" data-target="farm">
 			<div class="modal__more">
         <div class="modal__close modal-close">
           <svg  width='16' height='16'>
@@ -235,14 +235,51 @@
           </div>
         </div>
 
-        <div class="modal__farm-info">
+        <div class="modal__more-info">
           <div class="descr">FARM NFTs</div>
           <div class="text">The NFT collection has the ability to farm tokens before their official listing, the Rare, Epic and Legendary rarities give NFT the opportunity to farm. Farming is possible for a period of 60 days, during this period, each account storing NFA receives daily DEGY tokens, which will be credited before listing the token for public access.</div>
         </div>
 			</div>
 		</div>
 
-    <div class="modal__container" data-animation="fade" data-speed="300" data-target="more">
+    <div class="modal__container" data-animation="fade" data-speed="300" data-target="mint">
+			<div class="modal__mint">
+        <div class="modal__head">
+          <div class="modal__title">Confirmation</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__inner-mint">
+          <div class="modal__text">Delivery Guys <span class="series">#random</span></div>
+          <div class="modal__text">Quantity:<span class="quantity">8</span></div>
+
+          <ul class="modal__mint-total">
+            <li class="modal__mint-line">
+              <div class="modal__text">Total</div>
+              <div class="modal__total-checkout">
+                <div class="card__price">0,15</div>
+                <div class="modal__total-price">(-79,92$)</div>
+              </div>
+            </li>
+            <li class="modal__mint-line">
+              <div class="modal__text">BNB in wallet</div>
+              <div class="modal__total-checkout">
+                <div class="card__total-price card__price">10,15</div>
+                <div class="modal__total-price">(-189,92$)</div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="checkout">Checkout</button>
+        </div>
+			</div>
+		</div>
+
+    <div class="modal__container modal__container-more" data-animation="fade" data-speed="300" data-target="more">
 			<div class="modal__more more">
         <div class="modal__close modal-close">
           <svg  width='16' height='16'>
@@ -253,7 +290,7 @@
         <div class="modal__more-content">
           <div class="modal__content-card modal__content-card--over">
             <!-- Если одна карточка -->
-            <div class="modal__content-one">
+            <!-- <div class="modal__content-one">
               <div class="content__card card">
                 <div class="card__image">
                   <picture>
@@ -271,10 +308,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- От 2х-4х карточек -->
-            <!-- <div class="modal__content-less">
+            <div class="modal__content-less">
               <div class="modal__less-slider swiper-container">
                 <div class="swiper-wrapper">
                   <div class="content__less-slide swiper-slide">
@@ -360,7 +397,7 @@
                 <div class="content__arrow content__arrow-next"></div>
               </div>
               <div class="swiper-pagination"></div>
-            </div> -->
+            </div>
 
             <!-- От 4х карточек -->
             <!-- <div class="modal__content-over">
@@ -551,43 +588,6 @@
               <button class="card__calculator-btn card__btn" data-path="mint">MINT</button>
             </div>
           </div>
-        </div>
-			</div>
-		</div>
-
-    <div class="modal__container" data-animation="fade" data-speed="300" data-target="mint">
-			<div class="modal__mint">
-        <div class="modal__head">
-          <div class="modal__title">Confirmation</div>
-          <div class="modal__close modal-close">
-            <svg  width='16' height='16'>
-            <use href='img/sprite/sprite.svg#close'></use>
-            </svg>
-          </div>
-        </div>
-
-        <div class="modal__inner-mint">
-          <div class="modal__text">Delivery Guys <span class="series">#random</span></div>
-          <div class="modal__text">Quantity:<span class="quantity">8</span></div>
-
-          <ul class="modal__mint-total">
-            <li class="modal__mint-line">
-              <div class="modal__text">Total</div>
-              <div class="modal__total-checkout">
-                <div class="card__price">0,15</div>
-                <div class="modal__total-price">(-79,92$)</div>
-              </div>
-            </li>
-            <li class="modal__mint-line">
-              <div class="modal__text">BNB in wallet</div>
-              <div class="modal__total-checkout">
-                <div class="card__total-price card__price">10,15</div>
-                <div class="modal__total-price">(-189,92$)</div>
-              </div>
-            </li>
-          </ul>
-
-          <button class="checkout">Checkout</button>
         </div>
 			</div>
 		</div>
