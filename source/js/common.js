@@ -64,20 +64,20 @@ let mintSlider = new Swiper('.content__minted-slider', {
     nextEl: ".content__arrow-next",
     prevEl: ".content__arrow-prev",
   },
-  breakpoints: {
-    576: {
-      slidesPerView: 2,
-      slidesPerColumn: 2,
-      slidesPerGroup: 4,
-      autoHeight: false,
-    },
-    320: {
-      slidesPerView: 1,
-      slidesPerColumn: 2,
-      slidesPerGroup: 1,
-      autoHeight: false,
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerGroup: 4,
+        autoHeight: false,
+      },
+      320: {
+        slidesPerView: 1,
+        slidesPerColumn: 2,
+        slidesPerGroup: 1,
+        autoHeight: false,
+      }
     }
-  }
 });
 
 let airdropSlider = new Swiper('.content__slider', {
@@ -123,6 +123,20 @@ let modalSliderOver = new Swiper('.modal__over-slider', {
     nextEl: ".content__arrow-next",
     prevEl: ".content__arrow-prev",
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerGroup: 4,
+      autoHeight: false,
+    },
+    320: {
+      slidesPerView: 1,
+      slidesPerColumn: 2,
+      slidesPerGroup: 1,
+      autoHeight: false,
+    }
+  }
 });
 
 
