@@ -1,14 +1,16 @@
 .details {
-  padding: 155px 0 160px;
+  max-width: 1600px;
+  margin: 50px auto;
+  min-height: 705px;
+  background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
+  border-radius: 24px;
+  padding: 0 15px;
 
   &__inner {
-    min-height: 705px;
-    background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
-    border-radius: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 135px;
+    min-height: 705px;
   }
 
   &__block {
