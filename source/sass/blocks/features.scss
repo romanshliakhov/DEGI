@@ -30,34 +30,45 @@
     height: 97px;
     width: 235px;
 
+    .card__status {
+      padding: 4px 13px 7px;
+    }
+
+    svg {
+      margin-top: 7px;
+    }
+
+    span {
+      font-size: 17px;
+      line-height: 17px;
+      font-weight: 600;
+    }
+
     .legendary {
       top: 17px;
       left: 50%;
-      width: 115px;
-      font-size: 17px;
-      line-height: 17px;
+      // width: 136px;
       position: absolute;
-      transform: translateX(-50%) rotate(-13.71deg);
+      transform: translateX(-50%) rotate(-1.71deg);
       z-index: 1;
     }
 
     .epic {
       position: absolute;
-      font-size: 17px;
-      line-height: 17px;
-      right: 16px;
-      top: 22px;
+      width: 84px;
+      right: 0;
+      top: 40px;
       z-index: 4;
     }
 
     .rare {
       position: absolute;
       z-index: 3;
-      left: 35px;
+      left: 20px;
       top: 50%;
       font-size: 17px;
       line-height: 17px;
-      transform: rotate(-20.89deg);
+      transform: rotate(-8.89deg);
       z-index: 2;
     }
 
@@ -65,9 +76,9 @@
       position: absolute;
       font-size: 17px;
       line-height: 17px;
-      bottom: 25px;
+      bottom: -7px;
       right: 0;
-      transform: rotate(14deg);
+      transform: rotate(26.89deg);
       z-index: 3;
     }
 
@@ -76,8 +87,8 @@
       font-size: 17px;
       line-height: 17px;
       left: 50%;
-      bottom: 7px;
-      transform: translateX(-50%) rotate(-3.71deg);
+      bottom: -20px;
+      transform: translateX(-50%) rotate(9.01deg);
       z-index: 5;
     }
   }
@@ -121,14 +132,8 @@
     }
 
     .card__status  {
-      padding-left: 25px;
       font-size: 16px;
       line-height: 16px;
-
-      &::before {
-        width: 16px;
-        height: 16px;
-      }
     }
 
     .card__price {

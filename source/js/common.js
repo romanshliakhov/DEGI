@@ -1,50 +1,76 @@
 // sliders
 let nftsSliderTop = new Swiper('.nfts__top-slider', {
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  loop: true,
-  spaceBetween: 30,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-    reverseDirection: true
-  },
-  on: {
-    init() {
-      this.el.addEventListener('mouseenter', () => {
-        this.autoplay.stop();
-      });
+  // centeredSlides: true,
+  // slidesPerView: 'auto',
+  // loop: true,
+  // spaceBetween: 30,
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  //   reverseDirection: true
+  // },
+  // on: {
+  //   init() {
+  //     this.el.addEventListener('mouseenter', () => {
+  //       this.autoplay.stop();
+  //     });
 
-      this.el.addEventListener('mouseleave', () => {
-        this.autoplay.start();
-      });
-    }
-  },
+  //     this.el.addEventListener('mouseleave', () => {
+  //       this.autoplay.start();
+  //     });
+  //   }
+  // },
+  centeredSlides: true,
+  spaceBetween: 30,
+  slidesPerView: "auto",
+  loopedSlides: 8000,
+  slidesPerGroup: 1,
+  loopPreventsSlide: false,
+  loop: true,
+  speed: 10000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    reverseDirection: true
+  }
 });
 
 let nftsSliderBot = new Swiper('.nfts__bot-slider', {
   centeredSlides: true,
-  slidesPerView: 'auto',
-  loop: true,
   spaceBetween: 30,
+  slidesPerView: "auto",
+  loopedSlides: 8000,
+  slidesPerGroup: 1,
+  loopPreventsSlide: false,
+  loop: true,
+  speed: 9000,
   autoplay: {
-    delay: 2500,
+    delay: 0,
     disableOnInteraction: false,
-    pauseOnMouseEnter: true,
     reverseDirection: true
-  },
-  on: {
-    init() {
-      this.el.addEventListener('mouseenter', () => {
-        this.autoplay.stop();
-      });
+  }
+  // centeredSlides: true,
+  // slidesPerView: 'auto',
+  // loop: true,
+  // spaceBetween: 30,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  //   reverseDirection: true
+  // },
+  // on: {
+  //   init() {
+  //     this.el.addEventListener('mouseenter', () => {
+  //       this.autoplay.stop();
+  //     });
 
-      this.el.addEventListener('mouseleave', () => {
-        this.autoplay.start();
-      });
-    }
-  },
+  //     this.el.addEventListener('mouseleave', () => {
+  //       this.autoplay.start();
+  //     });
+  //   }
+  // },
 });
 
 let mintSlider = new Swiper('.content__minted-slider', {
