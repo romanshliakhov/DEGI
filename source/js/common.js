@@ -1,26 +1,5 @@
 // sliders
 let nftsSliderTop = new Swiper('.nfts__top-slider', {
-  // centeredSlides: true,
-  // slidesPerView: 'auto',
-  // loop: true,
-  // spaceBetween: 30,
-  // autoplay: {
-  //   delay: 4000,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  //   reverseDirection: true
-  // },
-  // on: {
-  //   init() {
-  //     this.el.addEventListener('mouseenter', () => {
-  //       this.autoplay.stop();
-  //     });
-
-  //     this.el.addEventListener('mouseleave', () => {
-  //       this.autoplay.start();
-  //     });
-  //   }
-  // },
   centeredSlides: true,
   spaceBetween: 30,
   slidesPerView: "auto",
@@ -48,29 +27,8 @@ let nftsSliderBot = new Swiper('.nfts__bot-slider', {
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
-    reverseDirection: true
+    reverseDirection: false,
   }
-  // centeredSlides: true,
-  // slidesPerView: 'auto',
-  // loop: true,
-  // spaceBetween: 30,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  //   reverseDirection: true
-  // },
-  // on: {
-  //   init() {
-  //     this.el.addEventListener('mouseenter', () => {
-  //       this.autoplay.stop();
-  //     });
-
-  //     this.el.addEventListener('mouseleave', () => {
-  //       this.autoplay.start();
-  //     });
-  //   }
-  // },
 });
 
 let mintSlider = new Swiper('.content__minted-slider', {
