@@ -1,6 +1,10 @@
 .content {
   padding: 180px 0 55px;
 
+  &__marketplace {
+    padding: 150px 0 100px;
+  }
+
   &__inner {
     width: 100%;
     min-height: 300px;

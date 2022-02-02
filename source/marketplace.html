@@ -33,10 +33,10 @@
               <a class="nav-link" href="#">Discover</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="#">Mint NFTs</a>
+              <a class="nav__link" href="#">Mint NFTs</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Marketplace</a>
+              <a class="nav__link nav__link--active" href="#">Marketplace</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Farm</a>
@@ -85,38 +85,23 @@
   </header>
 
   <main>
-    <section class="head">
-      <div class="head__title subtitle">Mint & Farm 5,000 unique DEGY NFTs</div>
-      <div class="head__info">
-        <ul class="head__list">
-          <li class="head__item">
-            <div class="head__item-count descr">5000</div>
-            <div class="head__item-status">are left</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--uncommon descr">1,000</div>
-            <div class="head__item-status card__status uncommon">uncommon</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--rare descr">2,950 <span>farm</span></div>
-            <div class="head__item-status card__status rare">rare</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--epic descr">1,000 <span>farm</span></div>
-            <div class="head__item-status card__status epic">epic</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--legendary descr">50 <span>farm</span></div>
-            <div class="head__item-status card__status legendary">legendary</div>
-          </li>
-        </ul>
-      </div>
+    <section class="head head__small">
+      <div class="head__title subtitle">Marketplace</div>
+      <form class="head__search search">
+        <label class="search__label">
+          <svg  width='20' height='20'>
+          <use href='img/sprite/sprite.svg#search'></use>
+          </svg>
+          <input class="search__input" type="text" placeholder="Start writing to find NFT" re>
+        </label>
+        <button class="search__btn">Search</button>
+      </form>
     </section>
 
     <section class="content">
-      <div class="container__content">
+      <div class="container">
         <div class="content__inner">
-          <div class="content__left">
+          <!-- <div class="content__left">
             <div class="content__card card">
               <div class="card__image">
                 <picture>
@@ -167,7 +152,8 @@
               </button>
             </div>
           </div>
-        </div>
+        </div> -->
+        data-tabs-target
       </div>
     </section>
   </main>
