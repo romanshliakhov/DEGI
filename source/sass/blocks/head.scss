@@ -6,6 +6,7 @@
 
   &__small {
     min-height: 260px;
+    max-height: 260px;
   }
 
   &__title {
@@ -32,7 +33,7 @@
   &__search {
     position: absolute;
     left: 50%;
-    bottom: -15px;
+    bottom: -35px;
     transform: translateX(-50%);
     max-width: 1075px;
     width: 100%;
@@ -40,6 +41,64 @@
     box-shadow: 0px 45px 92px rgba(104, 157, 219, 0.09);
     border-radius: 18px;
     padding: 17px 18px;
+  }
+
+  &__soon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    max-width: 855px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 45px 92px rgba(104, 157, 219, 0.09);
+    border-radius: 18px;
+    padding: 35px 0;
+    z-index: 10;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(248, 249, 253, 0.43) 0%, #F8F9FD 87.98%);
+      backdrop-filter: blur(29px);
+      background-color: red;
+      z-index: 10;
+    }
+  }
+
+  &__soon-wrapper {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__soon-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__soon-text {
+    margin-top: 35px;
+    max-width: 340px;
+  }
+
+  &__soon-roadmap {
+    margin-top: 18px;
+    background: linear-gradient(92.05deg, #FFAB5D 7.98%, #FEE97B 131.44%);
+    border-radius: 8px;
+    padding: 12px 17px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #fff;
   }
 
   &__list {

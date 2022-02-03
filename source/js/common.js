@@ -170,6 +170,30 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 });
 
+// content tabs
+document.addEventListener('DOMContentLoaded', () => {
+	const tabs = document.querySelector('.content__tabs');
+	const tabsBtn = document.querySelectorAll('.content__tabs-btn');
+	const tabsContent = document.querySelectorAll('.content__tabs-content');
+
+	if (tabs) {
+		tabs.addEventListener('click', (e) => {
+			if (e.target.classList.contains('content__tabs-btn')) {
+				const tabsPath = e.target.dataset.tabsPath;
+				tabsBtn.forEach(el => {el.classList.remove('content__tabs-btn--active')});
+				document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('content__tabs-btn--active');
+				tabsHandler(tabsPath);
+			}
+		});
+	}
+
+	const tabsHandler = (path) => {
+		tabsContent.forEach(el => {el.classList.remove('content__tabs-content--active')});
+		document.querySelector(`[data-tabs-target="${path}"]`).classList.add('content__tabs-content--active');
+	};
+});
+
+
 // dropdown
 document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
   const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
