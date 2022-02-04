@@ -43,6 +43,18 @@
     padding: 17px 18px;
   }
 
+  &__overlay {
+    position: absolute;
+    z-index: 5;
+    background: linear-gradient(180deg, rgba(248, 249, 253, 0.43) 0%, #F8F9FD 87.98%);
+    backdrop-filter: blur(29px);
+    width: 100%;
+    height: 1545px;
+    left: 0;
+    right: 0;
+    margin-top: -60px;
+  }
+
   &__soon {
     position: relative;
     display: flex;
@@ -58,17 +70,6 @@
     border-radius: 18px;
     padding: 35px 0;
     z-index: 10;
-
-    &::before {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(180deg, rgba(248, 249, 253, 0.43) 0%, #F8F9FD 87.98%);
-      backdrop-filter: blur(29px);
-      background-color: red;
-      z-index: 10;
-    }
   }
 
   &__soon-wrapper {

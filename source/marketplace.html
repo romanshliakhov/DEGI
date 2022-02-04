@@ -575,7 +575,6 @@
                     <div class="content__filter-title">Price in <svg  width='15' height='15'><use href='img/sprite/sprite.svg#bnb'></use></svg>BNB</div>
 
                     <div class="content__filter-price filters">
-
                       <div class="filters-price">
                         <div class="filters-field filters-price__label">
                           <input class="filters-price__input input-min" type="number" value="0.01" placeholder="0.01">
@@ -899,16 +898,21 @@
                     <div class="content__filter-title">Price in <svg  width='15' height='15'><use href='img/sprite/sprite.svg#bnb'></use></svg>BNB</div>
 
                     <div class="content__filter-price filters">
-                      <div class="filters__item filters-price">
-                        <div class="filters-price__inputs">
-                          <label class="filters-price__label">
-                            <input type="number" min="0.01" max="100.01" placeholder="0.01" class="filters-price__input" id="input-0">
-                          </label>
-                          <label class="filters-price__label">
-                            <input type="number" min="500" max="100.01" placeholder="100.01" class="filters-price__input" id="input-1">
-                          </label>
+                      <div class="filters-price">
+                        <div class="filters-field filters-price__label">
+                          <input class="filters-price__input input-min" type="number" value="0.01" placeholder="0.01">
                         </div>
-                        <div class="filters-price__slider" id="range-slider"></div>
+                        <div class="filters-field filters-price__label">
+                          <input class="filters-price__input input-max" type="number" value="100.01" placeholder="100.01">
+                        </div>
+                      </div>
+
+                      <div class="filters-price__slider">
+                        <div class="filters-price__progress"></div>
+                      </div>
+                      <div class="filters-range__inputs">
+                        <input type="range" class="filters-range__input filters-range__min" min="0" max="100.01" value="0.01">
+                        <input type="range" class=" filters-range__input filters-range__max" min="0" max="100.01" value="100.01">
                       </div>
                     </div>
 
