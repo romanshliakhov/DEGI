@@ -1,0 +1,241 @@
+// /* Chrome, Safari, Edge, Opera */
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+// 	-webkit-appearance: none;
+// 	margin: 0;
+// }
+
+// /* Firefox */
+// input[type=number] {
+// 	-moz-appearance: textfield;
+// }
+
+// .filters-price__inputs {
+// 	display: flex;
+// 	justify-content: space-between;
+// }
+
+// .filters-price__label {
+// 	display: flex;
+// 	align-items: center;
+//   justify-content: center;
+//   text-align: center;
+// 	width: 110px;
+// 	height: 38px;
+// 	border: 1px solid #E5E8F3;
+// 	border-radius: 10px;
+// 	padding: 10px 0;
+//   background-color: #F8F9FD;
+
+//   &:active,
+//   &:focus {
+//     border: 1px solid #4E55FF;
+//     background-color: white;
+//   }
+// }
+
+// .filters-price__input {
+// 	border: none;
+// 	color: #B3B4CA;
+//   font-family: "Rubik";
+// 	font-size: 14px;
+//   line-height: 18px;
+//   font-weight: 400;
+//   text-align: center;
+
+//   &:active,
+//   &:focus {
+
+//     .filters-price__label {
+//       border: 1px solid #4E55FF;
+//       background-color: white;
+//     }
+
+
+//   }
+// }
+
+// .filters-price__slider {
+// 	margin-top: 28px;
+// }
+
+// .noUi-connect {
+// 	background-color: #5d71dd;
+// }
+
+// .noUi-target {
+// 	background-color: #bfbfbf;
+// 	border: none;
+// 	border-radius: 100px;
+// 	box-shadow: none;
+// 	height: 3px;
+// }
+
+// .noUi-handle::after,
+// .noUi-handle::before {
+// 	display: none;
+// }
+
+// .noUi-handle {
+// 	box-shadow: none;
+// 	border-radius: 100%;
+// 	background-color: #fff;
+// 	border: 3px solid #5d71dd;
+// }
+
+// .noUi-horizontal .noUi-handle {
+// 	width: 22px;
+// 	height: 22px;
+// 	top: -10px;
+// }
+
+// .noUi-horizontal .noUi-handle-upper {
+// 	right: 0;
+// }
+
+
+// .filters-price__inputs {
+// 	display: flex;
+// 	justify-content: space-between;
+// }
+
+// .filters-price__label {
+// 	display: flex;
+// 	align-items: center;
+//   justify-content: center;
+//   text-align: center;
+// 	width: 110px;
+// 	height: 38px;
+// 	border: 1px solid #E5E8F3;
+// 	border-radius: 10px;
+// 	padding: 10px 0;
+//   background-color: #F8F9FD;
+
+//   &:active,
+//   &:focus {
+//     border: 1px solid #4E55FF;
+//     background-color: white;
+//   }
+// }
+
+// .filters-price__input {
+// 	border: none;
+// 	color: #B3B4CA;
+//   font-family: "Rubik";
+// 	font-size: 14px;
+//   line-height: 18px;
+//   font-weight: 400;
+//   text-align: center;
+
+//   &:active,
+//   &:focus {
+
+//     .filters-price__label {
+//       border: 1px solid #4E55FF;
+//       background-color: white;
+//     }
+
+
+//   }
+// }
+
+// .filters-price__slider {
+// 	margin-top: 28px;
+// }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+
+.filters-price {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters-price__label {
+  width: 110px;
+	height: 38px;
+}
+
+.filters-price__input {
+  border: 1px solid #E5E8F3;
+  border-radius: 10px;
+	padding: 10px 0;
+  background-color: #F8F9FD;
+  text-align: center;
+  font-family: "Rubik";
+	font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #B3B4CA;
+  width: 110px;
+  height: 38px;
+
+  &:active,
+  &:focus {
+    border: 1px solid #4E55FF;
+    background-color: white;
+    color: #2B2D65;
+  }
+}
+
+.filters-price__slider {
+  position: relative;
+  margin-top: 22px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #E5E8F3;
+}
+
+.filters-price__progress {
+  position: absolute;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #4E55FF;
+  left: 0;
+  right: 0;
+}
+
+.filters-range__inputs {
+  position: relative;
+}
+
+.filters-range__input {
+  position: absolute;
+  top: -5px;
+  height: 3px;
+  width: 100%;
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.filters-range__input[type="range"]::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  background-color: #4E55FF;
+  pointer-events: auto;
+}
+
+.filters-range__input[type="range"]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  -moz-appearance: none;
+  background-color: #4E55FF;
+  pointer-events: auto;
+  border: none;
+}

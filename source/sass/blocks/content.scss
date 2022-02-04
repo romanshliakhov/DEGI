@@ -378,11 +378,18 @@
   }
 
   &__filter-title {
+    display: flex;
+    align-items: center;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 21px;
     font-weight: 500;
     margin-bottom: 18px;
+
+    svg {
+      margin-left: 5px;
+      margin-right: 2px;
+    }
   }
 
   &__filter-rarity {
@@ -441,6 +448,10 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 52px;
+  }
+
+  &__filter-price {
+    margin-bottom: 60px;
   }
 
   &__status-btn {
@@ -511,8 +522,8 @@
     line-height: 23px;
   }
 
-
   &__cards {
+    position: relative;
     margin-top: 25px;
     max-height: 1227px;
     display: flex;
@@ -531,6 +542,10 @@
     .card__image {
       max-width: 260px;
       max-height: 260px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 }

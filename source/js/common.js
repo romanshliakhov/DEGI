@@ -657,3 +657,84 @@ const counter = function () {
 };
 
 counter();
+
+
+// scroll to top
+function trackScroll() {
+  let scrolled = window.pageYOffset;
+  let coords = document.documentElement.clientHeight;
+
+  if (scrolled > coords) {
+    goTopBtn.classList.add('scroll__top--show');
+  }
+  if (scrolled < coords) {
+    goTopBtn.classList.remove('scroll__top--show');
+  }
+}
+
+function backToTop() {
+  if (window.pageYOffset > 0) {
+    window.scrollBy(0, -100);
+    setTimeout(backToTop, 0);
+  }
+}
+
+let goTopBtn = document.querySelector('.scroll__top');
+
+window.addEventListener('scroll', trackScroll);
+goTopBtn.addEventListener('click', backToTop);
+
+
+// select
+let select = function () {
+  let selectHeader = document.querySelectorAll('.select__header');
+  let selectItem = document.querySelectorAll('.select__item');
+
+  selectHeader.forEach(item => {
+    item.addEventListener('click', selectToggle);
+  });
+
+  selectItem.forEach(item => {
+    item.addEventListener('click', selectChoose);
+  });
+
+  function selectToggle() {
+    this.parentElement.classList.toggle('is-active');
+  }
+
+  function selectChoose() {
+    let text = this.innerText,
+        select = this.closest('.select'),
+        currentText = select.querySelector('.select__current');
+    currentText.innerText = text;
+    select.classList.remove('is-active');
+  }
+};
+
+select();
+
+
+// range-slider
+const rangeInput = document.querySelectorAll('.filters-range__input'),
+      progress = document.querySelector(".filters-price__progress");
+
+let priceGap = 1;
+
+rangeInput.forEach(input => {
+  input.addEventListener("input", e => {
+    let minValue = parseInt(rangeInput[0].value),
+        maxValue = parseInt(rangeInput[1].value);
+
+    if( maxValue - minValue < priceGap) {
+      if (e.target.className === "input-min") {
+        rangeInput[0].value = maxValue - priceGap;
+      } else {
+        rangeInput[1].value = minValue + priceGap;
+      }
+    } else {
+      progress.style.left = (minValue / rangeInput[0].max) * 100 + "%";
+      progress.style.right = 100 - (maxValue / rangeInput[1].max) * 100 + "%";
+    }
+  });
+});
+
