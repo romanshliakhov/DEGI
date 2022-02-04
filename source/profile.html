@@ -36,7 +36,7 @@
               <a class="nav__link" href="#">Mint NFTs</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Marketplace</a>
+              <a class="nav__link nav__link--active" href="#">Marketplace</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Farm</a>
@@ -100,16 +100,13 @@
               <div class="profile__wallet-id">
                 <span>0xs676a9a...4b8E</span>
                 <img src="img/copy.svg" alt="">
-                <!-- <svg width='24' height='24'>
-                <use href='img/sprite/sprite.svg#copy'></use>
-                </svg> -->
               </div>
               <div class="profile__wallet-count">All withdrawable: <span>0.00 BNB</span></div>
             </div>
           </div>
           <div class="profile__details-btns">
-            <div class="profile__details-btn profile__details-btn--withdraw" data-easy-toggle="#withdraw" data-easy-class="open" data-easy-rcoe>Withdraw</div>
-            <div class="profile__details-btn profile__details-btn--bids" data-easy-toggle="#active-bids" data-easy-class="open" data-easy-rcoe>Active bids</div>
+            <div class="profile__details-btn profile__details-btn--withdraw">Withdraw</div>
+            <div class="profile__details-btn profile__details-btn--bids" data-path="bids">Active bids</div>
           </div>
         </div>
         <div class="profile__info-nfts">
@@ -962,6 +959,165 @@
   </footer>
 
   <div class="modal">
+    <div class="modal__container" data-animation="fade" data-speed="300" data-target="wallet">
+			<div class="modal__wallet">
+        <div class="modal__head">
+          <div class="modal__title">Connect wallet</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__inner">
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+        </div>
+
+				<div class="modal__bottom">
+          <div class="modal__text">Haven’t got a cryptowallet yet?</div>
+          <button class="wallet">Learn how to connect</button>
+        </div>
+			</div>
+		</div>
+
+		<div class="modal__container" data-animation="fade" data-speed="300" data-target="bids">
+			<div class="modal__bids">
+        <div class="modal__head">
+          <div class="modal__title">Active bids</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__inner-bids">
+          <ul class="modal__bids-list">
+            <li class="modal__bids-item">
+              <div class="modal__bids-info">
+                <div class="modal__bids-avatar">
+                  <picture>
+                  <source type='image/webp' srcset='img/nft.webp'>
+                  <img class='modal__bids-ava' width='64' height='64' src='img/nft.png' alt=''>
+                  </picture>
+                </div>
+                <div class="modal__bids-details">
+                  <div class="modal__bids-name">Delivery Guys</div>
+                  <div class="modal__bids-id">ID: <span>#119666</span></div>
+                </div>
+              </div>
+              <div class="modal__bids-amount"><span>1.982</span> BNB</div>
+              <div class="modal__bids-cancel">Cancel bid</div>
+            </li>
+            <li class="modal__bids-item">
+              <div class="modal__bids-info">
+                <div class="modal__bids-avatar">
+                  <picture>
+                  <source type='image/webp' srcset='img/nft.webp'>
+                  <img class='modal__bids-ava' width='64' height='64' src='img/nft.png' alt=''>
+                  </picture>
+                </div>
+                <div class="modal__bids-details">
+                  <div class="modal__bids-name">Delivery Guys</div>
+                  <div class="modal__bids-id">ID: <span>#119666</span></div>
+                </div>
+              </div>
+              <div class="modal__bids-amount"><span>1.982</span> BNB</div>
+              <div class="modal__bids-cancel">Cancel bid</div>
+            </li>
+            <li class="modal__bids-item">
+              <div class="modal__bids-info">
+                <div class="modal__bids-avatar">
+                  <picture>
+                  <source type='image/webp' srcset='img/nft.webp'>
+                  <img class='modal__bids-ava' width='64' height='64' src='img/nft.png' alt=''>
+                  </picture>
+                </div>
+                <div class="modal__bids-details">
+                  <div class="modal__bids-name">Delivery Guys</div>
+                  <div class="modal__bids-id">ID: <span>#119666</span></div>
+                </div>
+              </div>
+              <div class="modal__bids-amount"><span>1.982</span> BNB</div>
+              <div class="modal__bids-cancel">Cancel bid</div>
+            </li>
+            <li class="modal__bids-item">
+              <div class="modal__bids-info">
+                <div class="modal__bids-avatar">
+                  <picture>
+                  <source type='image/webp' srcset='img/nft.webp'>
+                  <img class='modal__bids-ava' width='64' height='64' src='img/nft.png' alt=''>
+                  </picture>
+                </div>
+                <div class="modal__bids-details">
+                  <div class="modal__bids-name">Delivery Guys</div>
+                  <div class="modal__bids-id">ID: <span>#119666</span></div>
+                </div>
+              </div>
+              <div class="modal__bids-amount"><span>1.982</span> BNB</div>
+              <div class="modal__bids-cancel">Cancel bid</div>
+            </li>
+            <li class="modal__bids-item">
+              <div class="modal__bids-info">
+                <div class="modal__bids-avatar">
+                  <picture>
+                  <source type='image/webp' srcset='img/nft.webp'>
+                  <img class='modal__bids-ava' width='64' height='64' src='img/nft.png' alt=''>
+                  </picture>
+                </div>
+                <div class="modal__bids-details">
+                  <div class="modal__bids-name">Delivery Guys</div>
+                  <div class="modal__bids-id">ID: <span>#119666</span></div>
+                </div>
+              </div>
+              <div class="modal__bids-amount"><span>1.982</span> BNB</div>
+              <div class="modal__bids-cancel">Cancel bid</div>
+            </li>
+            <li class="modal__bids-item">
+              <div class="modal__bids-info">
+                <div class="modal__bids-avatar">
+                  <picture>
+                  <source type='image/webp' srcset='img/nft.webp'>
+                  <img class='modal__bids-ava' width='64' height='64' src='img/nft.png' alt=''>
+                  </picture>
+                </div>
+                <div class="modal__bids-details">
+                  <div class="modal__bids-name">Delivery Guys</div>
+                  <div class="modal__bids-id">ID: <span>#119666</span></div>
+                </div>
+              </div>
+              <div class="modal__bids-amount"><span>1.982</span> BNB</div>
+              <div class="modal__bids-cancel">Cancel bid</div>
+            </li>
+          </ul>
+        </div>
+			</div>
+		</div>
+
 		<div class="modal__container" data-animation="fade" data-speed="300" data-target="mint">
 			<div class="modal__mint">
         <div class="modal__head">
@@ -1039,7 +1195,6 @@
 	</div>
 
   <script src="js/swiper.min.js"></script>
-  <!-- <script src="js/nouislider.min.js"></script> -->
   <script src="js/common.min.js"></script>
 </body>
 

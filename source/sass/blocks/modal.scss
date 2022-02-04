@@ -101,7 +101,7 @@
 }
 
 .modal__title {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik";
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
@@ -360,4 +360,86 @@
 .content__over-slide.swiper-slide {
   height: calc((100% - 20px) / 2);
   overflow: hidden;
+}
+
+
+.modal__bids {
+  display: flex;
+  flex-direction: column;
+  min-height: 680px;
+  max-width: 635px;
+  width: 100%;
+}
+
+.modal__inner-bids {
+  border-top: 1px solid #E5E8F3;
+  max-width: 635px;
+  width: 100%;
+}
+
+.modal__bids-list {
+  max-height: 590px;
+  overflow-y: scroll;
+}
+
+.modal__bids-item {
+  height: 100px;
+  padding-left: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.modal__bids-info {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.modal__bids-avatar {
+  height: 64px;
+  width: 64px;
+  border-radius: 12px;
+  margin-right: 18px;
+
+  img {
+    border-radius: 12px;
+  }
+}
+
+.modal__bids-id {
+  font-size: 12px;
+  line-height: 20px;
+  color: #B3B4CA;
+
+  span {
+    color: #2B2D65;
+    font-weight: 700;
+  }
+}
+
+.modal__bids-amount {
+  margin-left: 60px;
+  display: flex;
+
+  span {
+    margin-right: 5px;
+  }
+}
+
+.modal__bids-cancel {
+  margin-left: 85px;
+  margin-right: 42px;
+  width: 156px;
+  height: 42px;
+  padding: 12px 35px;
+  border: 1px solid #B3B4CA;
+  border-radius: 8px;
+  font-family: "Rubik";
+  font-size: 14px;
+  line-height: 17px;
+  color: #B3B4CA;
+  cursor: pointer;
 }
