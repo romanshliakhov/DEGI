@@ -316,7 +316,7 @@
     height: 393px;
   }
 
-  // new pages
+  // Marketplace
   &__tabs {
     position: relative;
     display: flex;
@@ -359,6 +359,11 @@
       display: block;
       width: 100%;
     }
+  }
+
+  &__tabs-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__tabs-inner {
@@ -500,6 +505,10 @@
     max-width: 966px;
     width: 100%;
     padding: 18px 33px;
+
+    // &--profile {
+    //   padding: 0;
+    // }
   }
 
   &__cards-head {
@@ -528,8 +537,8 @@
     max-height: 1227px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    // justify-content: space-between;
+    gap: 30px;
     overflow-y: scroll;
 
     .card {
@@ -612,6 +621,31 @@
     }
   }
 }
+
+  // profile page
+  .content__profile {
+      padding: 150px 0 100px;
+
+    .container {
+      padding: 0;
+    }
+
+    .content__tabs-inner {
+      margin-top: 0;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .content__tabs-cards {
+      max-width: 900px;
+      padding: 0;
+    }
+
+    .content__cards {
+      max-height: 820px;
+    }
+  }
+
 
 
 

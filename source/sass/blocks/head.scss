@@ -53,6 +53,10 @@
     left: 0;
     right: 0;
     margin-top: -60px;
+
+    &--profile {
+      height: 978px;
+    }
   }
 
   &__soon {
@@ -70,6 +74,31 @@
     border-radius: 18px;
     padding: 35px 0;
     z-index: 10;
+  }
+
+  &__connect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    max-width: 855px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 45px 92px rgba(104, 157, 219, 0.09);
+    border-radius: 18px;
+    padding: 35px 0 40px;
+    z-index: 10;
+
+    .head__soon-text {
+      margin: 18px 0;
+    }
+
+    .wallet {
+      margin: 0 auto;
+    }
   }
 
   &__soon-wrapper {
