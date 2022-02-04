@@ -33,152 +33,224 @@
               <a class="nav-link" href="#">Discover</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="#">Mint NFTs</a>
+              <a class="nav__link" href="#">Airdrop</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Mint</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Marketplace</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Farm</a>
+              <a class="nav__link nav__link--active" href="#">Farm</a>
             </li>
           </ul>
         </nav>
         <div class="header__btns">
           <div class="profile">Profile</div>
-          <div class="wallet wallet--connected" data-easy-toggle="#wallet" data-easy-class="open" data-easy-rcoe>0x...4b8E</div>
-          <div class="wallet__content" id="wallet">
-            <div class="wallet__tabs">
-              <ul class="wallet__tabs-list">
-                <li class="wallet__tabs-item">
-                  <button class="wallet__tabs-btn wallet__tabs-btn--active" data-tabs-path="wallet">Wallet</button>
-                </li>
-                <li class="wallet__tabs-item" >
-                  <button class="wallet__tabs-btn" data-tabs-path="history">Transactions</button>
-                </li>
-              </ul>
-              <div class="wallet__tabs-content wallet__tabs-content--active" data-tabs-target="wallet">
-                <div class="wallet__content-info">
-                  <div class="wallet__content-adress">
-                    <div class="wallet__content-title">My address</div>
-                    <div class="wallet__content-details">
-                      <span class="wallet__adress" >0x77D1a9b1c4F5F3317d6</span>
-                      <img src="img/sprite/copy.svg" alt="">
-                    </div>
-                  </div>
-                  <div class="wallet__content-adress">
-                    <div class="wallet__content-title">Balance</div>
-                    <div class="wallet__content-details"><span class="wallet__balance">0.000 BNB</span></div>
-                  </div>
-                </div>
-                <button class="disconnect">Disconnect wallet</button>
-              </div>
-              <div class="wallet__tabs-content" data-tabs-target="history">
-                <div class="wallet__content-info">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ut excepturi perspiciatis.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="wallet" data-path="wallet">Connect wallet</div>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="head">
-      <div class="head__title subtitle">Mint & Farm 5,000 unique DEGY NFTs</div>
-      <div class="head__info">
-        <ul class="head__list">
-          <li class="head__item">
-            <div class="head__item-count descr">5000</div>
-            <div class="head__item-status">are left</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--uncommon descr">1,000</div>
-            <div class="head__item-status card__status uncommon">uncommon</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--rare descr">2,950 <span>farm</span></div>
-            <div class="head__item-status card__status rare">rare</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--epic descr">1,000 <span>farm</span></div>
-            <div class="head__item-status card__status epic">epic</div>
-          </li>
-          <li class="head__item">
-            <div class="head__item-count head__item-count--legendary descr">50 <span>farm</span></div>
-            <div class="head__item-status card__status legendary">legendary</div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="content">
-      <div class="container__content">
-        <div class="content__inner">
-          <div class="content__left">
-            <div class="content__card card">
-              <div class="card__image">
-                <picture>
-                  <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                  <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                </picture>
-              </div>
-              <div class="card__info">
-                <div class="card__series">Delivery guys</div>
-                <div class="card__title">Delivery Guy #12001</div>
-                <div class="card__divider"></div>
-                <div class="card__footer">
-                  <div class="card__status uncommon">
-                    <svg  width='12' height='12'>
-                      <use href='img/sprite/sprite.svg#diamond'></use>
-                    </svg>
-                    <span>uncommon</span>
-                  </div>
-                  <div class="card__price">0,15</div>
-                </div>
-              </div>
+    <section class="farm">
+      <div class="container__small">
+        <!-- <div class="details__inner">
+          <div class="details__block">
+            <div class="details__image">
+              <picture>
+              <source type='image/webp' srcset='img/details-img1.webp'>
+              <img class='details__img' width='311' height='311' src='img/details-img1.png' alt=''>
+              </picture>
             </div>
 
-            <div class="card__calculator">
-              <div class="card__nft-price">
-                <div class="text">Price:</div>
-                <div class="card__price">0,15</div>
-              </div>
-
-              <div class="card__calculator-content">
-                <div class="card__calculator-box counter">
-                  <button class="card__calculator-board counter__btn" data-direction="minus">-</button>
-                  <input type="text" value="0" class="card__calculator-board counter__value">
-                  <button class="card__calculator-board counter__btn" data-direction="plus">+</button>
-                </div>
-                <button class="card__calculator-btn card__btn" data-path="mint">MINT</button>
-              </div>
+            <div class="details__info">
+              <div class="descr">they are cool</div>
+              <p class="text">“These delivery guys are easy to spot in the crowd. Someone is afraid of them, and someone admires them, but it cannot be denied that these guys are really cool”</p>
             </div>
           </div>
-          <div class="content__right">
-            <div class="content__info">
-              <div class="descr">...mint presale started!</div>
-              <div class="text">MINT collection Delivery Guy allows you not only to get the rarest NFT, but also DEGY tokens, which will accumulate on the account from each NFT of <span class="text__rare">Rare</span>,
-                <span class="text__epic">Epic</span> and <span class="text__legendary">Legendary</span> rarities.</div>
-              <button class="content__more" data-path="farm">
-                <span>More about FARM</span>
-                <img src="img/sprite/question.svg" alt="">
-              </button>
+
+          <div class="details__block">
+            <div class="details__image">
+              <picture>
+                <source type='image/webp' srcset='img/details-img2.webp'>
+                <img class='details__img' width='311' height='311' src='img/details-img2.png' alt=''>
+              </picture>
             </div>
+
+            <div class="details__info">
+              <div class="descr">they are irreplaceable</div>
+              <p class="text">“Dr. A. Kleiner kept telling me that robots would soon replace <br> these guys delivering hot food to me. He was right, and it happened, but he did not take into account that in the Metaverse, food delivery is always cooler than any notorious robot."</p>
+            </div>
+          </div>
+        </div> -->
+        <div class="farm__inner">
+          <div class="farm__title">Just keep the NFT up to 60 days and get tokens:</div>
+          <div class="farm__info">
+           <ul class="farm__info-list">
+            <li class="farm__info-item">Available NFTs</li>
+            <li class="farm__info-item">
+              <div class="card__status rare">
+                <svg  width='12' height='12'>
+                  <use href='img/sprite/sprite.svg#diamond'></use>
+                </svg>
+                <span>rare</span>
+              </div>
+            </li>
+            <li class="farm__info-item">
+              <div class="card__status epic">
+                <svg  width='12' height='12'>
+                  <use href='img/sprite/sprite.svg#diamond'></use>
+                </svg>
+                <span>epic</span>
+              </div>
+            </li>
+            <li class="farm__info-item">
+              <div class="card__status legendary">
+                <svg  width='12' height='12'>
+                  <use href='img/sprite/sprite.svg#diamond'></use>
+                </svg>
+                <span>legendary</span>
+              </div>
+            </li>
+           </ul>
+
+           <ul class="farm__info-list">
+            <li class="farm__info-item">Number of NFTs</li>
+            <li class="farm__info-item">
+              <span>100,000</span>
+            </li>
+            <li class="farm__info-item">
+              <span>5,00</span>
+            </li>
+            <li class="farm__info-item">
+              <span>50</span>
+            </li>
+           </ul>
+
+           <ul class="farm__info-list">
+            <li class="farm__info-item">Farming from 1 NFT</li>
+            <li class="farm__info-item">
+              <span>100,000 per day</span>
+            </li>
+            <li class="farm__info-item">
+              <span>100,000 per day</span>
+            </li>
+            <li class="farm__info-item">
+              <span>100,000 per day</span>
+            </li>
+           </ul>
+
+           <ul class="farm__info-list">
+            <li class="farm__info-item">Estimated cost DEGY token farmed from 1 NFT in 60 days</li>
+            <li class="farm__info-item">
+              <span>$6 per day</span>
+            </li>
+            <li class="farm__info-item">
+              <span>$6 per day</span>
+            </li>
+            <li class="farm__info-item">
+              <span>$6 per day</span>
+            </li>
+           </ul>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <footer class="footer">
+    <div class="container__small">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <picture>
+            <source type='image/webp' srcset='img/logo.webp'>
+            <img class='logo' width='86' height='76' src='img/logo.png' alt='DEGY logo'>
+            </picture>
+        </div>
 
+        <div class="footer__info">
+          <ul class="footer__nav nav">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">Discovery</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Our legend</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Roadmap</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Mint</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Farming</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Marketplace</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Smartcontracat</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials-info">
+            <div class="footer__socials-title">Join our community</div>
+
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#google'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='19' height='19'>
+                    <use href='img/sprite/sprite.svg#discord'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='18' height='18'>
+                    <use href='img/sprite/sprite.svg#telegram'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='18' height='18'>
+                    <use href='img/sprite/sprite.svg#twitter'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bot">
+          <div class="footer__copyright">Copyright © 2021. DEGY. All rights reserved.</div>
+          <div class="footer__terms">
+            <a class="footer__terms-links" href="#">Terms & Conditions</a>
+            <a class="footer__terms-links" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <div class="modal">
-		<div class="modal__container" data-animation="fade" data-speed="300" data-target="mint">
-			<div class="modal__mint">
+		<div class="modal__container" data-animation="fade" data-speed="300" data-target="wallet">
+			<div class="modal__wallet">
         <div class="modal__head">
-          <div class="modal__title">Confirmation</div>
+          <div class="modal__title">Connect wallet</div>
           <div class="modal__close modal-close">
             <svg  width='16' height='16'>
             <use href='img/sprite/sprite.svg#close'></use>
@@ -186,66 +258,36 @@
           </div>
         </div>
 
-        <div class="modal__inner-mint">
-          <div class="modal__text">Delivery Guys <span class="series">#random</span></div>
-          <div class="modal__text">Quantity:<span class="quantity">8</span></div>
-
-          <ul class="modal__mint-total">
-            <li class="modal__mint-line">
-              <div class="modal__text">Total</div>
-              <div class="modal__total-checkout">
-                <div class="card__price">0,15</div>
-                <div class="modal__total-price">(-79,92$)</div>
-              </div>
-            </li>
-            <li class="modal__mint-line">
-              <div class="modal__text">BNB in wallet</div>
-              <div class="modal__total-checkout">
-                <div class="card__total-price card__price">10,15</div>
-                <div class="modal__total-price">(-189,92$)</div>
-              </div>
-            </li>
-          </ul>
-
-          <button class="checkout">Checkout</button>
-        </div>
-			</div>
-		</div>
-
-    <div class="modal__container modal__container-farm" data-animation="fade" data-speed="300" data-target="farm">
-			<div class="modal__farm">
-        <div class="modal__close modal-close">
-          <svg  width='16' height='16'>
-          <use href='img/sprite/sprite.svg#close'></use>
-          </svg>
+        <div class="modal__inner">
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
         </div>
 
-        <div class="content__card card">
-          <div class="card__image">
-            <picture>
-              <source type='image/webp' srcset='img/nfts/nft4.webp'>
-              <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-            </picture>
-          </div>
-          <div class="card__info">
-            <div class="card__series">Delivery guys</div>
-            <div class="card__title">Delivery Guy #12001</div>
-            <div class="card__divider"></div>
-            <div class="card__footer">
-              <div class="card__status uncommon">
-                <svg  width='12' height='12'>
-                  <use href='img/sprite/sprite.svg#diamond'></use>
-                </svg>
-                <span>uncommon</span>
-              </div>
-              <div class="card__price">0,989</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal__farm-info">
-          <div class="descr">FARM NFTs</div>
-          <div class="text">The NFT collection has the ability to farm tokens before their official listing, the Rare, Epic and Legendary rarities give NFT the opportunity to farm. Farming is possible for a period of 60 days, during this period, each account storing NFA receives daily DEGY tokens, which will be credited before listing the token for public access.</div>
+				<div class="modal__bottom">
+          <div class="modal__text">Haven’t got a cryptowallet yet?</div>
+          <button class="wallet">Learn how to connect</button>
         </div>
 			</div>
 		</div>

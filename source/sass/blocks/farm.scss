@@ -1,0 +1,62 @@
+.farm {
+  margin: 78px auto 0;
+  max-width: 1300px;
+  min-height: 473px;
+  background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
+  border-radius: 24px;
+
+  &__inner {
+    position: relative;
+    padding: 75px 112px;
+  }
+
+  &__title {
+    max-width: 530px;
+    font-family: "Rubik";
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__info {
+    margin-top: 38px;
+    max-width: 702px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-list {
+    max-width: 199px;
+
+    li + li {
+      margin-top: 28px;
+    }
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    height: 26px;
+
+    &:first-child {
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 500;
+      color: #BEC8FF;
+      min-height: 35px;
+    }
+
+    span {
+      font-family: "Rubik";
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}
+
+
+
+
