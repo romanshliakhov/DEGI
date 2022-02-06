@@ -539,7 +539,7 @@ const modal = new Modal({
 
 // timer
 document.addEventListener('DOMContentLoaded', () => {
-	const newYear = new Date('feb 01 2022 00:00:00');
+	const newYear = new Date('mar 01 2022 00:00:00'); // пишем тут дату
 
 	const daysVal = document.querySelector('.timer__count-days .timer__count-val');
 	const hoursVal = document.querySelector('.timer__count-hours .timer__count-val');

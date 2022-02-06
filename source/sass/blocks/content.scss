@@ -649,7 +649,23 @@
 // farm page
 .content__farm {
   margin-top: 120px;
+  margin-bottom: 100px;
 }
+
+.content__farm-inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .aside {
+    margin-top: 0;
+    position: sticky;
+    top: 20px;
+    max-height: 500px;
+  }
+}
+
+
 
 .content__farm-title {
   font-family: "Rubik";
@@ -659,6 +675,15 @@
   margin-bottom: 50px;
 }
 
+.content__farm-wrapp {
+  max-width: 635px;
+  width: 100%;
+  min-height: 312px;
+
+  .farm__card + .farm__card {
+    margin-top: 30px;
+  }
+}
 
 
 
