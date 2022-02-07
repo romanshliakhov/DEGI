@@ -1384,6 +1384,19 @@
   .breadcrumbs {
     margin-top: 10px;
   }
+
+  // burger
+  .header__btns {
+    width: auto;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .mobile-menu.profile {
+    display: block;
+  }
 }
 
 

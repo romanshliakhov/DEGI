@@ -43,10 +43,21 @@
 	transition: transform 0.5s;
   opacity: 0;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &.active {
     transform: translateX(0);
     opacity: 1;
+    position: fixed;
+    overflow: hidden;
+
+    .profile {
+      display: flex;
+      margin-top: 15px;
+      width: 180px;
+    }
   }
 
   .header__nav-menu {
@@ -66,7 +77,6 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    padding-left: 34px;
     cursor: pointer;
 
     &:hover {

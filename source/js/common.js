@@ -7,6 +7,9 @@ menuBtn.addEventListener('click', function(){
 	menu.classList.toggle('active');
 });
 
+
+
+
 // sliders
 let nftsSliderTop = new Swiper('.nfts__top-slider', {
   centeredSlides: true,

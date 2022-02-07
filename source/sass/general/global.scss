@@ -358,3 +358,18 @@ input[type="search"]::-webkit-search-results-decoration {
 main {
   position: relative;
 }
+
+.body__scroll {
+  overflow-y: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: transparent;
+  transition: 0.2s;
+}
