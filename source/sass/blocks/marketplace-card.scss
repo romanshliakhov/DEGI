@@ -1,0 +1,237 @@
+.marketplace__card {
+  position: relative;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-image {
+    padding: 0 93px;
+  }
+
+  &-img {
+    border-radius: 18px;
+  }
+
+
+  &-info {
+    max-width: 560px;
+    width: 100%;
+    border-left: 1px solid #E5E8F3;
+  }
+
+  &-top {
+    padding-left: 30px;
+  }
+
+  &-title {
+    margin-top: 75px;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+
+  &-owned {
+    margin-top: 7px;
+    font-family: "Rubik";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+
+    span {
+      font-weight: 400;
+      color: #4E55FF;
+    }
+  }
+
+  &-status {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+
+    .content__status-btn {
+      width: 62px;
+      height: 24px;
+      padding: 4px 9px;
+      border: 1px solid #4E55FF;
+      color: #4E55FF;
+      font-weight: 600;
+    }
+
+    div + div {
+      margin-left: 8px;
+    }
+  }
+
+  &-bid {
+    margin-top: 48px;
+    max-width: 440px;
+    width: 100%;
+    min-height: 78px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px 0 24px;
+
+    &--btns {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px 24px 24px;
+    }
+  }
+
+  &-details {
+    margin-top: 42px;
+    max-width: 440px;
+  }
+
+  &-head {
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #E5E8F3;;
+  }
+
+  &-detail {
+    margin-bottom: 75px;
+  }
+
+  &-item {
+    margin-top: 12px;
+    border-bottom: 0.8px dashed #E5E8F3;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Rubik";
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+
+    &:first-child {
+      font-weight: 600;
+      color: #F3AC40;
+    }
+  }
+
+  &-bottom {
+    border-top: 1px solid #E5E8F3;
+    padding-left: 30px;
+  }
+
+  &-bot {
+    min-height: 48px;
+    max-width: 440px;
+    width: 100%;
+    margin: 22px 0 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-btn {
+    padding: 12px 17px;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    background: #E5E8F3;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+
+    &--active {
+      background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+  }
+
+
+}
+
+.marketplace__bid-info {
+  span {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  svg {
+    margin-left: 5px;
+  }
+}
+
+.marketplace__bid-text {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #B3B4CA;
+}
+
+.marketplace__bid-btns {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.marketplace__bid-btn {
+  height: 42px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik";
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+
+  svg {
+    margin-right: 6px;
+  }
+
+  &--bid {
+    padding: 11px 17px;
+    color: #fff;
+    background: linear-gradient(98.59deg, #4E55FF 8.54%, #3A7CFD 34.57%, #24A1FB 62.94%, #00DAF8 109.42%);
+  }
+
+  &--remove {
+    width: 187px;
+    border: 1px solid #4E55FF;
+    color: #4E55FF;
+  }
+
+  &--transfer {
+    width: 187px;
+    border: 1px solid #F3AC40;
+    color: #F3AC40;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+
+.marketplace__details-text {
+  font-family: "Rubik";
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #B3B4CA;
+}

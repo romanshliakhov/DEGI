@@ -1,0 +1,19 @@
+.breadcrumbs {
+  position: absolute;
+  margin-top: 27px;
+
+  &__link {
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 21px;
+    color: #B3B4CA;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
+      margin-top: 4px;
+      margin-right: 5px;
+    }
+  }
+}

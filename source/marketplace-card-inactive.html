@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DEGY NFT's</title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Rubik-Bold.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/NotoSans-Regular.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/NotoSans-Medium.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/NotoSans-SemiBold.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/NotoSans-Bold.woff2" as="font" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body class="body-index">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo" href="#">
+          <picture>
+          <source type='image/webp' srcset='img/logo.webp'>
+          <img class='logo' width='100' height='100' src='img/logo.png' alt='DEGY logo'>
+          </picture>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list nav">
+            <li class="nav__item">
+              <a class="nav-link" href="#">Discover</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Mint NFTs</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">Marketplace</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Farm</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="mobile-menu">
+          <ul class="header__nav-menu">
+            <li class="header__nav-item">
+              <a class="nav-link" href="#">Discover</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="nav__link" href="#">Mint NFTs</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="nav__link" href="#">Marketplace</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="nav__link" href="#">Farm</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__btns">
+          <div class="profile">Profile</div>
+          <div class="wallet wallet--connected" data-easy-toggle="#wallet" data-easy-class="open" data-easy-rcoe>0x...4b8E</div>
+          <div class="wallet__content" id="wallet">
+            <div class="wallet__tabs">
+              <ul class="wallet__tabs-list">
+                <li class="wallet__tabs-item">
+                  <button class="wallet__tabs-btn wallet__tabs-btn--active" data-tabs-path="wallet">Wallet</button>
+                </li>
+                <li class="wallet__tabs-item" >
+                  <button class="wallet__tabs-btn" data-tabs-path="history">Transactions</button>
+                </li>
+              </ul>
+              <div class="wallet__tabs-content wallet__tabs-content--active" data-tabs-target="wallet">
+                <div class="wallet__content-info">
+                  <div class="wallet__content-adress">
+                    <div class="wallet__content-title">My address</div>
+                    <div class="wallet__content-details">
+                      <span class="wallet__adress" >0x77D1a9b1c4F5F3317d6</span>
+                      <img src="img/sprite/copy.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="wallet__content-adress">
+                    <div class="wallet__content-title">Balance</div>
+                    <div class="wallet__content-details"><span class="wallet__balance">0.000 BNB</span></div>
+                  </div>
+                </div>
+                <button class="disconnect">Disconnect wallet</button>
+              </div>
+              <div class="wallet__tabs-content" data-tabs-target="history">
+                <div class="wallet__content-info">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ut excepturi perspiciatis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="marketplace__card">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="/">
+            <svg  width='16' height='15'>
+              <use href='img/sprite/sprite.svg#breadcrumbs-arrow'></use>
+            </svg>
+            <span>go back</span>
+          </a>
+        </div>
+
+        <div class="marketplace__card-wrapper">
+          <div class="marketplace__card-image">
+            <picture>
+              <source type='image/webp' srcset='img/nft.webp'>
+              <img class='marketplace__card-img' width='560' height='560' src='img/nft.png' alt=''>
+            </picture>
+          </div>
+
+          <div class="marketplace__card-info">
+            <div class="marketplace__card-top">
+              <div class="marketplace__card-title">Delivery Guy <span>#12001</span></div>
+              <div class="marketplace__card-owned">Owned by <span>sshjq...F5Fn</span></div>
+              <div class="marketplace__card-status">
+                <div class="card__status uncommon">
+                  <svg  width='10' height='10'>
+                    <use href='img/sprite/sprite.svg#diamond'></use>
+                  </svg>
+                  <span>uncommon</span>
+                </div>
+                <div class="content__status-btn">on bids</div>
+                <div class="content__status-btn">on sale</div>
+              </div>
+              <div class="marketplace__card-bid marketplace__card-bid--btns">
+                <div class="marketplace__bid-info">
+                  <div class="marketplace__bid-text">Price</div>
+                  <span>
+                    Not for sale
+                  </span>
+                </div>
+                <div class="marketplace__bid-btns">
+                  <div class="marketplace__bid-btn marketplace__bid-btn--remove" data-path="sell">
+                    <svg  width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#remove'></use>
+                    </svg>
+                    <span>Sell</span>
+                  </div>
+                  <div class="marketplace__bid-btn marketplace__bid-btn--transfer" data-path="transfer">
+                    <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.5 1L0.5 4H3.5H6.5L3.5 1Z" fill="url(#paint0_linear_704_7173)"/>
+                      <path d="M3.5 13V1M3.5 1L0.5 4H3.5H6.5L3.5 1Z" stroke="url(#paint1_linear_704_7173)" stroke-linecap="round" stroke-linejoin="round"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_704_7173" x1="0.935185" y1="9.5926" x2="8.6047" y2="9.45564" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FFAB5D"/>
+                      <stop offset="1" stop-color="#FEE97B"/>
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_704_7173" x1="0.935185" y1="9.5926" x2="8.6047" y2="9.45564" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FFAB5D"/>
+                      <stop offset="1" stop-color="#FEE97B"/>
+                      </linearGradient>
+                      </defs>
+                    </svg>
+                    <span>Transfer</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="marketplace__card-details">
+                <div class="marketplace__card-head">
+                  <div class="marketplace__details-text">Atributes</div>
+                  <div class="marketplace__details-text">Percentage of rarity</div>
+                </div>
+                <ul class="marketplace__card-detail">
+                  <li class="marketplace__card-item">
+                    Total points <span>7852</span>
+                  </li>
+                  <li class="marketplace__card-item">
+                    Background <span>10%</span>
+                  </li>
+                  <li class="marketplace__card-item">
+                    Eyes <span>8%</span>
+                  </li>
+                  <li class="marketplace__card-item">
+                    Mouth <span>25%</span>
+                  </li>
+                  <li class="marketplace__card-item">
+                    Bag <span>19%</span>
+                  </li>
+                  <li class="marketplace__card-item">
+                    Skin <span>50%</span>
+                  </li>
+                  <li class="marketplace__card-item">
+                    Head <span>50%</span>
+                  </li>
+                  <li class="marketplace__card-item">
+                    Clothes <span>50%</span>
+                  </li>
+                  <li class="marketplace__card-item">
+                    Item in hands <span>50%</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="marketplace__card-bottom">
+              <div class="marketplace__card-bot">
+                <div class="marketplace__bid-info">
+                  <div class="marketplace__bid-text">Higest bid</div>
+                  <span>
+                    12.98
+                    <svg  width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#bnb'></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="marketplace__card-btn marketplace__card-btn--active" data-path="sell">Sell on this bid</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container__small">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <picture>
+            <source type='image/webp' srcset='img/logo.webp'>
+            <img class='logo' width='86' height='76' src='img/logo.png' alt='DEGY logo'>
+            </picture>
+        </div>
+
+        <div class="footer__info">
+          <ul class="footer__nav nav">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">Discovery</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Our legend</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Roadmap</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Mint</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Farming</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Marketplace</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Smartcontracat</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials-info">
+            <div class="footer__socials-title">Join our community</div>
+
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#google'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='19' height='19'>
+                    <use href='img/sprite/sprite.svg#discord'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='18' height='18'>
+                    <use href='img/sprite/sprite.svg#telegram'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='18' height='18'>
+                    <use href='img/sprite/sprite.svg#twitter'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bot">
+          <div class="footer__copyright">Copyright © 2021. DEGY. All rights reserved.</div>
+          <div class="footer__terms">
+            <a class="footer__terms-links" href="#">Terms & Conditions</a>
+            <a class="footer__terms-links" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__container" data-animation="fade" data-speed="300" data-target="wallet">
+			<div class="modal__wallet">
+        <div class="modal__head">
+          <div class="modal__title">Connect wallet</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__inner">
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+          <a href="#" class="modal__metamask">
+            <svg  width='25' height='23'>
+              <use href='img/sprite/sprite.svg#metamask'></use>
+            </svg>
+            <div class="modal__metamask-name">Metamask</div>
+          </a>
+        </div>
+
+				<div class="modal__bottom">
+          <div class="modal__text">Haven’t got a cryptowallet yet?</div>
+          <button class="wallet">Learn how to connect</button>
+        </div>
+			</div>
+		</div>
+
+    <div class="modal__container" data-animation="fade" data-speed="300" data-target="transfer">
+			<div class="modal__transfer">
+        <div class="modal__head">
+          <div class="modal__title">Transfer</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <form class="modal__inner-transfer">
+          <div class="modal__bids-info">
+            <div class="modal__bids-avatar">
+              <picture>
+              <source type='image/webp' srcset='img/nft.webp'>
+              <img class='modal__bids-ava' width='64' height='64' src='img/nft.png' alt=''>
+              </picture>
+            </div>
+            <div class="modal__bids-details">
+              <div class="modal__bids-name">Delivery Guys</div>
+              <div class="modal__bids-id">ID: <span>#119666</span></div>
+            </div>
+          </div>
+          <div class="modal__transfer-text">Receiving adress:</div>
+          <input class="modal__transfer-input" type="text" placeholder="Paste adress" required >
+          <button class="modal__transfer-btn">Confirm</button>
+          <!-- active input -->
+          <!-- <button class="modal__transfer-btn modal__transfer-btn--active">Confirm</button> -->
+        </form>
+			</div>
+		</div>
+
+    <div class="modal__container" data-animation="fade" data-speed="300" data-target="sell">
+			<div class="modal__transfer">
+        <div class="modal__head">
+          <div class="modal__title">Sell</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <form class="modal__inner-transfer">
+          <div class="modal__bids-info">
+            <div class="modal__bids-avatar">
+              <picture>
+              <source type='image/webp' srcset='img/nft.webp'>
+              <img class='modal__bids-ava' width='64' height='64' src='img/nft.png' alt=''>
+              </picture>
+            </div>
+            <div class="modal__bids-details">
+              <div class="modal__bids-name">Delivery Guys</div>
+              <div class="modal__bids-id">ID: <span>#119666</span></div>
+            </div>
+          </div>
+          <div class="modal__sell-block">
+            <div class="modal__sell-line">
+              <div class="modal__sell-text">Market fee</div>
+              <span>4%</span>
+            </div>
+            <div class="modal__sell-line">
+              <div class="modal__sell-text">Receive</div>
+              <input type="number" placeholder="00.00">
+            </div>
+          </div>
+
+          <div class="modal__transfer-text">Offer value (in BNB):</div>
+          <input class="modal__transfer-input" type="text" placeholder="Type BNB value for sale offer" required >
+          <button class="modal__transfer-btn">Confirm</button>
+          <!-- active input -->
+          <!-- <button class="modal__transfer-btn modal__transfer-btn--active">Confirm</button> -->
+        </form>
+			</div>
+		</div>
+
+		<div class="modal__container" data-animation="fade" data-speed="300" data-target="mint">
+			<div class="modal__mint">
+        <div class="modal__head">
+          <div class="modal__title">Confirmation</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__inner-mint">
+          <div class="modal__text">Delivery Guys <span class="series">#random</span></div>
+          <div class="modal__text">Quantity:<span class="quantity">8</span></div>
+
+          <ul class="modal__mint-total">
+            <li class="modal__mint-line">
+              <div class="modal__text">Total</div>
+              <div class="modal__total-checkout">
+                <div class="card__price">0,15</div>
+                <div class="modal__total-price">(-79,92$)</div>
+              </div>
+            </li>
+            <li class="modal__mint-line">
+              <div class="modal__text">BNB in wallet</div>
+              <div class="modal__total-checkout">
+                <div class="card__total-price card__price">10,15</div>
+                <div class="modal__total-price">(-189,92$)</div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="checkout">Checkout</button>
+        </div>
+			</div>
+		</div>
+
+    <div class="modal__container modal__container-farm" data-animation="fade" data-speed="300" data-target="farm">
+			<div class="modal__farm">
+        <div class="modal__close modal-close">
+          <svg  width='16' height='16'>
+          <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </div>
+
+        <div class="content__card card">
+          <div class="card__image">
+            <picture>
+              <source type='image/webp' srcset='img/nfts/nft4.webp'>
+              <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+            </picture>
+          </div>
+          <div class="card__info">
+            <div class="card__series">Delivery guys</div>
+            <div class="card__title">Delivery Guy #12001</div>
+            <div class="card__divider"></div>
+            <div class="card__footer">
+              <div class="card__status uncommon">
+                <svg  width='12' height='12'>
+                  <use href='img/sprite/sprite.svg#diamond'></use>
+                </svg>
+                <span>uncommon</span>
+              </div>
+              <div class="card__price">0,989</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__farm-info">
+          <div class="descr">FARM NFTs</div>
+          <div class="text">The NFT collection has the ability to farm tokens before their official listing, the Rare, Epic and Legendary rarities give NFT the opportunity to farm. Farming is possible for a period of 60 days, during this period, each account storing NFA receives daily DEGY tokens, which will be credited before listing the token for public access.</div>
+        </div>
+			</div>
+		</div>
+	</div>
+
+  <script src="js/swiper.min.js"></script>
+  <!-- <script src="js/nouislider.min.js"></script> -->
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

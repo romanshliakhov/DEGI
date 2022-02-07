@@ -738,3 +738,12 @@ rangeInput.forEach(input => {
   });
 });
 
+
+// burger
+let menuBtn = document.querySelector('.burger-menu');
+let menu = document.querySelector('.mobile-menu');
+
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+});
