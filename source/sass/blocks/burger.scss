@@ -33,15 +33,16 @@
 }
 
 .mobile-menu {
-  position: fixed;
-  top: 118px;
-  right: 0;
+  position: absolute;
+  top: 78px;
+  left: 0;
   width: 398px;
-  height: 589px;
-  background-color: #fff;
-  transform: translateX(100%);
+  height: 260px;
+  background-color: #f8f9fd;
+  transform: translateX(-100%);
 	transition: transform 0.5s;
   opacity: 0;
+  z-index: 10;
 
   &.active {
     transform: translateX(0);
@@ -51,6 +52,8 @@
   .header__nav-menu {
     margin-top: 25px;
     flex-direction: column;
+    font-weight: 700;
+    color: #4E55FF;
 
     li + li {
       margin-left: 0;
@@ -65,12 +68,6 @@
     justify-content: start;
     padding-left: 34px;
     cursor: pointer;
-
-    &__nav-link--active {
-      .header__nav-item {
-        background-color: red !important;
-      }
-    }
 
     &:hover {
       background-color: #F7F7F7;
