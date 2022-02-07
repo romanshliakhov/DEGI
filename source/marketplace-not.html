@@ -109,6 +109,7 @@
   </header>
 
   <main>
+    <div class="head__overlay"></div>
     <section class="head head__small">
       <div class="head__title subtitle">Marketplace</div>
       <div class="head__soon">
@@ -118,7 +119,7 @@
           <a class="head__soon-roadmap" href="#">Check roadmap</a>
         </div>
       </div>
-      <div class="head__overlay"></div>
+      <!-- <div class="head__overlay"></div> -->
     </section>
 
     <section class="content__marketplace">
@@ -137,1154 +138,174 @@
               </li>
             </ul>
 
-            <div class="content__tabs-inner">
-              <div class="content__tabs-content content__tabs-content--active" data-tabs-target="all">
-                <div class="content__tabs-inner">
-                  <aside class="content__filter">
-                    <div class="content__filter-title">Rarity</div>
+            <div class="content__tabs-wrapper">
+              <aside class="content__filter">
+                <div class="content__filter-title">Rarity</div>
 
-                    <div class="content__filter-rarity">
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status uncommon">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>uncommon</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status rare">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>rare</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status common">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>common</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status epic">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>epic</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status legendary">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>legendary</span>
-                        </div>
-                      </label>
+                <div class="content__filter-rarity">
+                  <label class="content__filter-label">
+                    <input class="content__filter-input" type="checkbox">
+                    <span class="content__filter-checkbox"></span>
+                    <div class="card__status uncommon">
+                      <svg  width='10' height='10'>
+                        <use href='img/sprite/sprite.svg#diamond'></use>
+                      </svg>
+                      <span>uncommon</span>
                     </div>
-
-                    <div class="content__filter-title">Status</div>
-
-                    <div class="content__filter-status">
-                      <button class="content__status-btn content__status-btn--active">on sale</button>
-                      <button class="content__status-btn">on bids</button>
-                      <button class="content__status-btn">no bids</button>
+                  </label>
+                  <label class="content__filter-label">
+                    <input class="content__filter-input" type="checkbox">
+                    <span class="content__filter-checkbox"></span>
+                    <div class="card__status rare">
+                      <svg  width='10' height='10'>
+                        <use href='img/sprite/sprite.svg#diamond'></use>
+                      </svg>
+                      <span>rare</span>
                     </div>
+                  </label>
+                  <label class="content__filter-label">
+                    <input class="content__filter-input" type="checkbox">
+                    <span class="content__filter-checkbox"></span>
+                    <div class="card__status common">
+                      <svg  width='10' height='10'>
+                        <use href='img/sprite/sprite.svg#diamond'></use>
+                      </svg>
+                      <span>common</span>
+                    </div>
+                  </label>
+                  <label class="content__filter-label">
+                    <input class="content__filter-input" type="checkbox">
+                    <span class="content__filter-checkbox"></span>
+                    <div class="card__status epic">
+                      <svg  width='10' height='10'>
+                        <use href='img/sprite/sprite.svg#diamond'></use>
+                      </svg>
+                      <span>epic</span>
+                    </div>
+                  </label>
+                  <label class="content__filter-label">
+                    <input class="content__filter-input" type="checkbox">
+                    <span class="content__filter-checkbox"></span>
+                    <div class="card__status legendary">
+                      <svg  width='10' height='10'>
+                        <use href='img/sprite/sprite.svg#diamond'></use>
+                      </svg>
+                      <span>legendary</span>
+                    </div>
+                  </label>
+                </div>
 
-                    <div class="content__filter-title">Price in <svg  width='15' height='15'><use href='img/sprite/sprite.svg#bnb'></use></svg>BNB</div>
+                <div class="content__filter-title">Status</div>
 
-                    <div class="content__filter-price filters">
-                      <div class="filters-price">
-                        <div class="filters-field filters-price__label">
-                          <input class="filters-price__input input-min" type="number" value="0.01" placeholder="0.01">
+                <div class="content__filter-status">
+                  <label class="content__status-label">
+                    <input class="content__filter-input" type="checkbox" checked>
+                    <div class="content__status-btn">on sale</div>
+                  </label>
+                  <label class="content__status-label">
+                    <input class="content__filter-input" type="checkbox">
+                    <div class="content__status-btn">on bids</div>
+                  </label>
+                  <label class="content__status-label">
+                    <input class="content__filter-input" type="checkbox">
+                    <div class="content__status-btn">no bids</div>
+                  </label>
+                </div>
+
+                <div class="content__filter-title">Price in <svg  width='15' height='15'><use href='img/sprite/sprite.svg#bnb'></use></svg>BNB</div>
+
+                <div class="content__filter-price filters">
+                  <div class="filters-price">
+                    <div class="filters-field filters-price__label">
+                      <input class="filters-price__input input-min" type="number" value="0.01" placeholder="0.01">
+                    </div>
+                    <div class="filters-field filters-price__label">
+                      <input class="filters-price__input input-max" type="number" value="100.01" placeholder="100.01">
+                    </div>
+                  </div>
+
+                  <div class="filters-price__slider">
+                    <div class="filters-price__progress"></div>
+                  </div>
+                  <div class="filters-range__inputs">
+                    <input type="range" class="filters-range__input filters-range__min" min="0" max="100.01" value="0.01">
+                    <input type="range" class=" filters-range__input filters-range__max" min="0" max="100.01" value="100.01">
+                  </div>
+                </div>
+
+                <div class="content__filter-btns">
+                  <button class="content__filter-btn content__filter-btn--clear" type="submit">Clear</button>
+                  <button class="content__filter-btn content__filter-btn--find"  type="submit">Find NFTs</button>
+                </div>
+
+              </aside>
+
+              <div class="content__tabs-inner">
+                <div class="content__tabs-content content__tabs-content--active" data-tabs-target="all">
+                  <div class="content__tabs-inner">
+                    <div class="content__tabs-cards">
+                      <div class="content__cards-head">
+                        <div class="content__card-count">Showing <span>198,908</span> NFTS</div>
+                        <div class="content__card-sort select">
+                          <div class="select__header">
+                            <span class="select__current">Sort by</span>
+                            <svg width='10' height='4'>
+                              <use href='img/sprite/sprite.svg#arrow-sort'></use>
+                            </svg>
+                          </div>
+
+                          <div class="select__body">
+                            <div class="select__item">By popularity</div>
+                            <div class="select__item">By price</div>
+                            <div class="select__item">By name</div>
+                            <div class="select__item">Something else</div>
+                          </div>
                         </div>
-                        <div class="filters-field filters-price__label">
-                          <input class="filters-price__input input-max" type="number" value="100.01" placeholder="100.01">
+                      </div>
+                      <div class="content__cards">
+                        <div class="card">
+                          <div class="card__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/nfts/nft4.webp'>
+                              <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+                            </picture>
+                          </div>
+                          <div class="card__info">
+                            <div class="card__series">Delivery guys</div>
+                            <div class="card__title">Delivery Guy #12001</div>
+                            <div class="card__divider"></div>
+                            <div class="card__footer">
+                              <div class="card__status uncommon">
+                                <svg  width='10' height='10'>
+                                  <use href='img/sprite/sprite.svg#diamond'></use>
+                                </svg>
+                                <span>uncommon</span>
+                              </div>
+                              <div class="card__price">0,989</div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="filters-price__slider">
-                        <div class="filters-price__progress"></div>
-                      </div>
-                      <div class="filters-range__inputs">
-                        <input type="range" class="filters-range__input filters-range__min" min="0" max="100.01" value="0.01">
-                        <input type="range" class=" filters-range__input filters-range__max" min="0" max="100.01" value="100.01">
-                      </div>
-                    </div>
-
-                    <div class="content__filter-btns">
-                      <button class="content__filter-btn content__filter-btn--clear" type="submit">Clear</button>
-                      <button class="content__filter-btn content__filter-btn--find"  type="submit">Find NFTs</button>
-                    </div>
-
-                  </aside>
-                  <div class="content__tabs-cards">
-                    <div class="content__cards-head">
-                      <div class="content__card-count">Showing <span>198,908</span> NFTS</div>
-                      <div class="content__card-sort select">
-                        <div class="select__header">
-                          <span class="select__current">Sort by</span>
-                          <svg width='10' height='4'>
-                            <use href='img/sprite/sprite.svg#arrow-sort'></use>
+                        <!-- scroll top -->
+                        <div class="scroll__top" id="scrollTop">
+                          <svg  width='36' height='36'>
+                          <use href='img/sprite/sprite.svg#arrow-up'></use>
                           </svg>
-                        </div>
-
-                        <div class="select__body">
-                          <div class="select__item">By popularity</div>
-                          <div class="select__item">By price</div>
-                          <div class="select__item">By name</div>
-                          <div class="select__item">Something else</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="content__cards">
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="content__tabs-content" data-tabs-target="onfarm">
-                <div class="content__tabs-inner">
-                  <aside class="content__filter">
-                    <div class="content__filter-title">Rarity</div>
+                <div class="content__tabs-content" data-tabs-target="onfarm">
+                  <div class="content__tabs-inner">
 
-                    <div class="content__filter-rarity">
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status uncommon">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>uncommon</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status rare">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>rare</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status common">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>common</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status epic">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>epic</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status legendary">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>legendary</span>
-                        </div>
-                      </label>
-                    </div>
-
-                    <div class="content__filter-title">Status</div>
-
-                    <div class="content__filter-status">
-                      <button class="content__status-btn content__status-btn--active">on sale</button>
-                      <button class="content__status-btn">on bids</button>
-                      <button class="content__status-btn">no bids</button>
-                    </div>
-
-                    <div class="content__filter-title">Price in <svg  width='15' height='15'><use href='img/sprite/sprite.svg#bnb'></use></svg>BNB</div>
-
-                    <div class="content__filter-price filters">
-
-                      <div class="filters-price">
-                        <div class="filters-field filters-price__label">
-                          <input class="filters-price__input input-min" type="number" value="0.01" placeholder="0.01">
-                        </div>
-                        <div class="filters-field filters-price__label">
-                          <input class="filters-price__input input-max" type="number" value="100.01" placeholder="100.01">
-                        </div>
-                      </div>
-
-                      <div class="filters-price__slider">
-                        <div class="filters-price__progress"></div>
-                      </div>
-                      <div class="filters-range__inputs">
-                        <input type="range" class="filters-range__input filters-range__min" min="0" max="100.01" value="0.01">
-                        <input type="range" class=" filters-range__input filters-range__max" min="0" max="100.01" value="100.01">
-                      </div>
-                    </div>
-
-                    <div class="content__filter-btns">
-                      <button class="content__filter-btn content__filter-btn--clear" type="submit">Clear</button>
-                      <button class="content__filter-btn content__filter-btn--find"  type="submit">Find NFTs</button>
-                    </div>
-
-                  </aside>
-
-                  <div class="content__tabs-cards">
-                    <div class="content__cards-head">
-                      <div class="content__card-count">Showing <span>198,908</span> NFTS</div>
-                      <div class="content__card-sort select">
-                        <div class="select__header">
-                          <span class="select__current">Sort by</span>
-                          <svg width='10' height='4'>
-                            <use href='img/sprite/sprite.svg#arrow-sort'></use>
-                          </svg>
-                        </div>
-
-                        <div class="select__body">
-                          <div class="select__item">By popularity</div>
-                          <div class="select__item">By price</div>
-                          <div class="select__item">By name</div>
-                          <div class="select__item">Something else</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="content__cards">
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="content__tabs-content" data-tabs-target="mynfts">
-                <div class="content__tabs-inner">
-                  <aside class="content__filter">
-                    <div class="content__filter-title">Rarity</div>
+                <div class="content__tabs-content" data-tabs-target="mynfts">
+                  <div class="content__tabs-inner">
 
-                    <div class="content__filter-rarity">
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status uncommon">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>uncommon</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status rare">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>rare</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status common">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>common</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status epic">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>epic</span>
-                        </div>
-                      </label>
-                      <label class="content__filter-label">
-                        <input class="content__filter-input" type="checkbox">
-                        <span class="content__filter-checkbox"></span>
-                        <div class="card__status legendary">
-                          <svg  width='10' height='10'>
-                            <use href='img/sprite/sprite.svg#diamond'></use>
-                          </svg>
-                          <span>legendary</span>
-                        </div>
-                      </label>
-                    </div>
-
-                    <div class="content__filter-title">Status</div>
-
-                    <div class="content__filter-status">
-                      <button class="content__status-btn content__status-btn--active">on sale</button>
-                      <button class="content__status-btn">on bids</button>
-                      <button class="content__status-btn">no bids</button>
-                    </div>
-
-                    <div class="content__filter-title">Price in <svg  width='15' height='15'><use href='img/sprite/sprite.svg#bnb'></use></svg>BNB</div>
-
-                    <div class="content__filter-price filters">
-                      <div class="filters-price">
-                        <div class="filters-field filters-price__label">
-                          <input class="filters-price__input input-min" type="number" value="0.01" placeholder="0.01">
-                        </div>
-                        <div class="filters-field filters-price__label">
-                          <input class="filters-price__input input-max" type="number" value="100.01" placeholder="100.01">
-                        </div>
-                      </div>
-
-                      <div class="filters-price__slider">
-                        <div class="filters-price__progress"></div>
-                      </div>
-                      <div class="filters-range__inputs">
-                        <input type="range" class="filters-range__input filters-range__min" min="0" max="100.01" value="0.01">
-                        <input type="range" class=" filters-range__input filters-range__max" min="0" max="100.01" value="100.01">
-                      </div>
-                    </div>
-
-                    <div class="content__filter-btns">
-                      <button class="content__filter-btn content__filter-btn--clear" type="submit">Clear</button>
-                      <button class="content__filter-btn content__filter-btn--find"  type="submit">Find NFTs</button>
-                    </div>
-
-                  </aside>
-
-                  <div class="content__tabs-cards">
-                    <div class="content__cards-head">
-                      <div class="content__card-count">Showing <span>198,908</span> NFTS</div>
-                      <div class="content__card-sort select">
-                        <div class="select__header">
-                          <span class="select__current">Sort by</span>
-                          <svg width='10' height='4'>
-                            <use href='img/sprite/sprite.svg#arrow-sort'></use>
-                          </svg>
-                        </div>
-
-                        <div class="select__body">
-                          <div class="select__item">By popularity</div>
-                          <div class="select__item">By price</div>
-                          <div class="select__item">By name</div>
-                          <div class="select__item">Something else</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="content__cards">
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/nfts/nft4.webp'>
-                            <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="card__info">
-                          <div class="card__series">Delivery guys</div>
-                          <div class="card__title">Delivery Guy #12001</div>
-                          <div class="card__divider"></div>
-                          <div class="card__footer">
-                            <div class="card__status uncommon">
-                              <svg  width='10' height='10'>
-                                <use href='img/sprite/sprite.svg#diamond'></use>
-                              </svg>
-                              <span>uncommon</span>
-                            </div>
-                            <div class="card__price">0,989</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

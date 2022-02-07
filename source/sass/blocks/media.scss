@@ -31,6 +31,27 @@
   .features__inner {
     justify-content: space-around;
   }
+
+  // profile
+  .profile__info {
+    padding: 0 30px;
+  }
+
+  .profile__info-details {
+    max-width: 520px;
+    padding: 0 20px;
+  }
+
+  .profile__info-nfts {
+    max-width: 520px;
+    padding: 0 20px;
+  }
+
+  // farm
+  .farm {
+    padding: 0 20px;
+    width: 95%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -136,6 +157,44 @@
 
   .content__arrows {
     margin-top: 20px;
+  }
+
+  // marketplace
+  .search {
+    width: 95%;
+  }
+
+  // profile
+  .content__profile {
+    padding: 120px 20px 100px;
+  }
+
+  .profile__info {
+    flex-direction: column;
+  }
+
+  .profile__info-details {
+    max-width: 635px;
+    padding: inherit;
+  }
+
+  .profile__info-nfts {
+    margin-top: 20px;
+    max-width: 635px;
+    padding: 0 60px;
+  }
+
+  // marketplace-card
+  .marketplace__bid-btn {
+    font-size: 14px;
+  }
+
+  .marketplace__bid-btn--remove {
+    max-width: 160px;
+  }
+
+  .marketplace__bid-btn--transfer {
+    max-width: 110px;
   }
 }
 
@@ -441,6 +500,120 @@
   .modal__calculator {
     margin-top: 30px;
   }
+
+  // marketplace
+  .content__tabs-cards {
+    padding: 18px 12px;
+  }
+
+  .content__filter {
+    min-height: 800px;
+    max-width: 200px;
+  }
+
+  .content__filter-price {
+    margin-bottom: 30px;
+  }
+
+  .filters-price {
+    flex-direction: column;
+    align-items: center;
+
+    .filters-field + .filters-field {
+      margin-top: 15px;
+    }
+  }
+
+  .content__filter-btns {
+    flex-direction: column;
+
+    .content__filter-btn + .content__filter-btn {
+      margin-top: 15px;
+    }
+  }
+
+  .content__cards {
+    gap: 10px;
+
+    .card {
+      max-width: 235px;
+      min-height: 355px;
+    }
+  }
+
+  .head__small {
+    padding: 0 10px;
+  }
+
+  .aside__result-item {
+    padding: 20px 8px;
+  }
+
+  // farm
+  .content__farm {
+    margin: 50px 0;
+  }
+
+  .content__farm-aside {
+    max-width: 250px;
+  }
+
+  .content__farm-wrapp {
+    max-width: 490px;
+  }
+
+  .farm__card {
+    padding: 10px;
+  }
+
+  .farm__card-image {
+    max-width: 190px;
+  }
+
+  .farm__card-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .farm__card-info .farm__card-title+.farm__card-title {
+    margin-top: 7px;
+  }
+
+  .farm__card-result {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 14px;
+
+    span {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  .farm__image {
+    width: 175px;
+    height: 175px;
+
+    &--top {
+      right: -5px;
+      top: -40px;
+    }
+
+    &--bot {
+      bottom: -110px;
+      right: -10px;
+    }
+  }
+
+  .farm__connect {
+    width: 90%;
+  }
+
+  // marketplace-card
+  .marketplace__card-image {
+    min-width: auto;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -619,6 +792,112 @@
     margin-left: 0;
     max-width: 100%;
   }
+
+  // profile
+  .profile__info {
+    padding: 0;
+  }
+
+  .profile__info-details {
+    padding: 0 20px;
+  }
+
+  .profile__info-nfts {
+    height: 75px;
+  }
+
+  // farm
+  .farm__card-image {
+    max-width: 130px;
+  }
+
+  .farm__card-title {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .content__farm-aside {
+    max-width: 150px;
+  }
+
+  .aside__box {
+    padding: 10px 5px;
+  }
+
+  .content__farm-wrapp {
+    max-width: 375px;
+  }
+
+  .farm__card-result {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 12px;
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .farm {
+    padding: 0;
+  }
+
+  .farm__inner {
+    padding: 10px 0;
+    min-height: 473px;
+  }
+
+  .farm__image--top {
+    left: 10px;
+    top: inherit;
+    bottom: -70px;
+  }
+
+  .farm__image--bot {
+    bottom: -65px;
+    right: 20px;
+  }
+
+  .farm__info-list {
+    max-width: 165px;
+  }
+
+  // marketplace-card
+  .marketplace__card-wrapper {
+    flex-direction: column;
+  }
+
+  .marketplace__card-image {
+    max-width: 275px;
+    margin-top: 20px;
+  }
+
+  .marketplace__card-info {
+    border: none;
+  }
+
+  .marketplace__card-title {
+    margin-top: 20px;
+  }
+
+  .marketplace__card-top {
+    padding-left: 0;
+  }
+
+  .marketplace__card-bottom {
+    padding-left: 0;
+  }
+
+  .marketplace__card-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .marketplace__card-bid {
+    padding: 15px 10px;
+  }
+
+
 }
 
 @media (max-width: 575px) {
@@ -956,6 +1235,154 @@
         margin: 0 auto;
       }
     }
+  }
+
+  // marketplace
+  .head {
+    min-height: 200px;
+  }
+
+  .content__marketplace {
+    padding: 75px 0;
+  }
+
+  .content__tabs-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .content__tabs-item {
+    margin-bottom: 15px;
+  }
+
+  .content__tabs-wrapper {
+    flex-direction: column;
+  }
+
+  .content__filter {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .filters-price {
+    flex-direction: row;
+
+    .filters-field+.filters-field {
+      margin-top: 0;
+    }
+  }
+
+  .content__filter-btns {
+    flex-direction: row;
+
+    .content__filter-btn+.content__filter-btn {
+      margin-top: 0;
+    }
+  }
+
+  .content__cards {
+    justify-content: center;
+  }
+
+  // profile
+  .head__title {
+    padding-top: 25px;
+  }
+
+  .profile__info-details {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .profile__details-btns {
+    margin-top: 10px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .profile__details-btn {
+    width: 125px;
+    height: 35px;
+  }
+
+  .profile__info-nfts {
+    padding: 0;
+  }
+
+  .profile__nft-name {
+    font-size: 10px;
+  }
+
+  .profile__nft-detail {
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  // farm
+  .content__farm-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .content__farm-inner {
+    flex-direction: column;
+  }
+
+  .content__farm-inner .aside {
+    max-width: 100%;
+    position: relative;
+  }
+
+  .farm__card-image {
+    max-width: 110px;
+  }
+
+  .farm__card-info {
+    max-width: 155px;
+  }
+
+  .farm {
+    margin-top: 20px;
+  }
+
+  .farm__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .farm__info {
+    flex-wrap: wrap;
+  }
+
+  .farm__info-list {
+    li + li {
+      margin-top: 10px;
+    }
+
+    &:last-child {
+      max-width: 100%;
+    }
+  }
+
+  .farm__image--top {
+    display: none;
+  }
+
+  // marketplace-card
+  .marketplace__card-image {
+    margin-top: 35px;
+  }
+
+  .breadcrumbs {
+    margin-top: 10px;
   }
 }
 

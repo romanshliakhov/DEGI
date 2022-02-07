@@ -25,12 +25,13 @@
       top: -10px;
       right: 85px;
       transform: rotate(-17.97deg);
-
+      z-index: 15;
     }
 
     &--bot {
       bottom: -10px;
       transform: rotate(17.97deg);
+      z-index: 15;
     }
   }
 
