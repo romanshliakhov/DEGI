@@ -1,6 +1,21 @@
 .footer {
   border-top: 2px solid #E5E8F3;
   padding: 40px 0 50px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 152px;
+    height: 81px;
+    bottom: 0;
+    left: 60%;
+    transform: translateX(-40%);
+  }
 
   &__logo {
     display: block;

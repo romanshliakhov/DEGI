@@ -380,6 +380,15 @@
 .modal__bids-list {
   max-height: 590px;
   overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #4E55FF;
+    border-radius: 100px;
+  }
 }
 
 .modal__bids-item {
@@ -442,4 +451,10 @@
   line-height: 17px;
   color: #B3B4CA;
   cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    border: 1px solid #2B2D65;
+    color: #2B2D65;
+  }
 }

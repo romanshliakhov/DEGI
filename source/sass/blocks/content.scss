@@ -422,6 +422,11 @@
     &:checked + .content__filter-checkbox {
       background-color: #4E55FF;
     }
+
+    &:checked + .content__status-btn {
+      color: #4E55FF;
+      border: 1px solid #4E55FF;
+    }
   }
 
   &__filter-checkbox {
@@ -455,8 +460,11 @@
     margin-bottom: 52px;
   }
 
-  &__filter-price {
-    margin-bottom: 60px;
+  &__status-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
   }
 
   &__status-btn {
@@ -468,11 +476,10 @@
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
+  }
 
-    &--active {
-      color: #4E55FF;
-      border: 1px solid #4E55FF;
-    }
+  &__filter-price {
+    margin-bottom: 60px;
   }
 
   &__filter-btns {
@@ -505,10 +512,6 @@
     max-width: 966px;
     width: 100%;
     padding: 18px 33px;
-
-    // &--profile {
-    //   padding: 0;
-    // }
   }
 
   &__cards-head {
@@ -537,7 +540,6 @@
     max-height: 1227px;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
     gap: 30px;
     overflow-y: scroll;
 
@@ -551,6 +553,28 @@
     .card__image {
       max-width: 260px;
       max-height: 260px;
+    }
+
+    .card__info {
+      padding-top: 12px;
+    }
+
+    .card__series {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .card__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .card__divider {
+      margin-top: 12px;
+    }
+
+    .card__footer {
+      margin-top: 16px;
     }
 
     &::-webkit-scrollbar {
@@ -664,8 +688,6 @@
     max-height: 500px;
   }
 }
-
-
 
 .content__farm-title {
   font-family: "Rubik";

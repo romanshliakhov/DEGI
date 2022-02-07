@@ -716,7 +716,7 @@ select();
 
 // range-slider
 const rangeInput = document.querySelectorAll('.filters-range__input'),
-      progress = document.querySelectorAll(".filters-price__progress");
+      progress = document.querySelector(".filters-price__progress");
 
 let priceGap = 1;
 

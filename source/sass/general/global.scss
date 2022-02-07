@@ -121,6 +121,16 @@ input[type="search"]::-webkit-search-results-decoration {
     margin: 0 auto;
     position: relative;
   }
+
+  &__overlay {
+    max-width: 1105px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1000) and (max-width: 1600px) {
