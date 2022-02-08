@@ -127,7 +127,12 @@
                     </svg>
                     <span>uncommon</span>
                   </div>
-                  <div class="card__price">0,989</div>
+                  <div class="card__price">
+                    <svg  width='13' height='13'>
+                      <use href='img/sprite/sprite.svg#bnb'></use>
+                    </svg>
+                    <span>0,989</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -150,10 +155,174 @@
     </section>
   </main>
 
+  <footer class="footer">
+    <div class="container__small">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <picture>
+            <source type='image/webp' srcset='img/logo.webp'>
+            <img class='logo' width='86' height='76' src='img/logo.png' alt='DEGY logo'>
+            </picture>
+        </div>
+
+        <div class="footer__info">
+          <ul class="footer__nav nav">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">Discovery</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Our legend</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Roadmap</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Mint</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Farming</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Marketplace</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Smartcontracat</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials-info">
+            <div class="footer__socials-title">Join our community</div>
+
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#google'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='19' height='19'>
+                    <use href='img/sprite/sprite.svg#discord'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='18' height='18'>
+                    <use href='img/sprite/sprite.svg#telegram'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg  width='18' height='18'>
+                    <use href='img/sprite/sprite.svg#twitter'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bot">
+          <div class="footer__copyright">Copyright © 2021. DEGY. All rights reserved.</div>
+          <div class="footer__terms">
+            <a class="footer__terms-links" href="#">Terms & Conditions</a>
+            <a class="footer__terms-links" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <div class="modal">
-		<div class="modal__container" data-animation="fade" data-speed="300" data-target="wallet">
+		<div class="modal__container" data-animation="fade" data-speed="300" data-target="mint">
+			<div class="modal__mint">
+        <div class="modal__head">
+          <div class="modal__title">Confirmation</div>
+          <div class="modal__close modal-close">
+            <svg  width='16' height='16'>
+            <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal__inner-mint">
+          <div class="modal__text">Delivery Guys <span class="series">#random</span></div>
+          <div class="modal__text">Quantity:<span class="quantity">8</span></div>
+
+          <ul class="modal__mint-total">
+            <li class="modal__mint-line">
+              <div class="modal__text">Total</div>
+              <div class="modal__total-checkout">
+                <div class="card__price">0,15</div>
+                <div class="modal__total-price">(-79,92$)</div>
+              </div>
+            </li>
+            <li class="modal__mint-line">
+              <div class="modal__text">BNB in wallet</div>
+              <div class="modal__total-checkout">
+                <div class="card__total-price card__price">10,15</div>
+                <div class="modal__total-price">(-189,92$)</div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="checkout">Checkout</button>
+        </div>
+			</div>
+		</div>
+
+    <div class="modal__container modal__container-farm" data-animation="fade" data-speed="300" data-target="farm">
+			<div class="modal__farm">
+        <div class="modal__close modal-close">
+          <svg  width='16' height='16'>
+          <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </div>
+
+        <div class="content__card card">
+          <div class="card__image">
+            <picture>
+              <source type='image/webp' srcset='img/nfts/nft4.webp'>
+              <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
+            </picture>
+          </div>
+          <div class="card__info">
+            <div class="card__series">Delivery guys</div>
+            <div class="card__title">Delivery Guy #12001</div>
+            <div class="card__divider"></div>
+            <div class="card__footer">
+              <div class="card__status uncommon">
+                <svg  width='12' height='12'>
+                  <use href='img/sprite/sprite.svg#diamond'></use>
+                </svg>
+                <span>uncommon</span>
+              </div>
+              <div class="card__price">
+                <svg  width='13' height='13'>
+                  <use href='img/sprite/sprite.svg#bnb'></use>
+                </svg>
+                <span>0,989</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__farm-info">
+          <div class="descr">FARM NFTs</div>
+          <div class="text">The NFT collection has the ability to farm tokens before their official listing, the Rare, Epic and Legendary rarities give NFT the opportunity to farm. Farming is possible for a period of 60 days, during this period, each account storing NFA receives daily DEGY tokens, which will be credited before listing the token for public access.</div>
+        </div>
+			</div>
+		</div>
+
+    <div class="modal__container" data-animation="fade" data-speed="300" data-target="wallet">
 			<div class="modal__wallet">
         <div class="modal__head">
           <div class="modal__title">Connect wallet</div>
@@ -194,44 +363,6 @@
 				<div class="modal__bottom">
           <div class="modal__text">Haven’t got a cryptowallet yet?</div>
           <button class="wallet">Learn how to connect</button>
-        </div>
-			</div>
-		</div>
-
-    <div class="modal__container modal__container-farm" data-animation="fade" data-speed="300" data-target="farm">
-			<div class="modal__farm">
-        <div class="modal__close modal-close">
-          <svg  width='16' height='16'>
-          <use href='img/sprite/sprite.svg#close'></use>
-          </svg>
-        </div>
-
-        <div class="content__card card">
-          <div class="card__image">
-            <picture>
-              <source type='image/webp' srcset='img/nfts/nft4.webp'>
-              <img class='card__img' width='211' height='211' src='img/nfts/nft4.png' alt=''>
-            </picture>
-          </div>
-          <div class="card__info">
-            <div class="card__series">Delivery guys</div>
-            <div class="card__title">Delivery Guy #12001</div>
-            <div class="card__divider"></div>
-            <div class="card__footer">
-              <div class="card__status uncommon">
-                <svg  width='12' height='12'>
-                  <use href='img/sprite/sprite.svg#diamond'></use>
-                </svg>
-                <span>uncommon</span>
-              </div>
-              <div class="card__price">0,989</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal__farm-info">
-          <div class="descr">FARM NFTs</div>
-          <div class="text">The NFT collection has the ability to farm tokens before their official listing, the Rare, Epic and Legendary rarities give NFT the opportunity to farm. Farming is possible for a period of 60 days, during this period, each account storing NFA receives daily DEGY tokens, which will be credited before listing the token for public access.</div>
         </div>
 			</div>
 		</div>
