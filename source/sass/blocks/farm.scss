@@ -136,6 +136,16 @@
 
     .farm__card-rarity {
       margin-left: 5px;
+
+      svg {
+        margin: 0;
+      }
+
+      span {
+        margin-left: 3px;
+        color: #fff;
+        font-weight: 600;
+      }
     }
 
     .farm__card-farming {
