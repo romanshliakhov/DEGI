@@ -28,6 +28,11 @@
     img {
       width: 24px;
       height: 24px;
+      transition: 0.4s ease-in;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -36,6 +41,11 @@
     line-height: 20px;
     font-weight: 500;
     text-decoration: underline;
+    transition: 0.4s ease-in;
+
+    &:hover {
+      color: #797efc;
+    }
   }
 
   &__results {

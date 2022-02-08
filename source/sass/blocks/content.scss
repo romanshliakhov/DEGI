@@ -416,6 +416,7 @@
 
     &:checked + .content__filter-checkbox {
       background-color: #4E55FF;
+      border: 1px solid #4E55FF;
     }
 
     &:checked + .content__status-btn {
@@ -439,8 +440,8 @@
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.53033 3.46967C1.23744 3.17678 0.762563 3.17678 0.46967 3.46967C0.176777 3.76256 0.176777 4.23744 0.46967 4.53033L1.53033 3.46967ZM4 7L3.46967 7.53033C3.76256 7.82322 4.23744 7.82322 4.53033 7.53033L4 7ZM10.5303 1.53033C10.8232 1.23744 10.8232 0.762563 10.5303 0.46967C10.2374 0.176777 9.76256 0.176777 9.46967 0.46967L10.5303 1.53033ZM0.46967 4.53033L3.46967 7.53033L4.53033 6.46967L1.53033 3.46967L0.46967 4.53033ZM4.53033 7.53033L10.5303 1.53033L9.46967 0.46967L3.46967 6.46967L4.53033 7.53033Z' fill='white'/%3e%3c/svg%3e");
       background-position: center;
       background-repeat: no-repeat;
-      width: 9px;
-      height: 6px;
+      width: 11px;
+      height: 10px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);

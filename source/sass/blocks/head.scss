@@ -131,6 +131,10 @@
     line-height: 19px;
     font-weight: 700;
     color: #fff;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__list {
