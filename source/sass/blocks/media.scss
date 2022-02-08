@@ -900,6 +900,11 @@
   .modal__container {
     width: 90%;
   }
+
+  .modal__bids-cancel {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1332,6 +1337,8 @@
     margin-bottom: 20px;
     font-size: 24px;
     line-height: 28px;
+    position: relative;
+    z-index: 15;
   }
 
   .content__farm-inner {
@@ -1398,6 +1405,37 @@
 
   .mobile-menu.profile {
     display: block;
+  }
+
+  .wallet__content {
+    left: -145px;
+    width: 310px;
+  }
+
+  .modal__bids-item {
+    padding-left: 10px;
+  }
+
+  .modal__bids-avatar {
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .modal__bids-name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .modal__bids-amount {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+
+  .modal__bids-cancel {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
