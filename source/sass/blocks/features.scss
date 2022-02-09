@@ -29,13 +29,12 @@
     margin-top: 45px;
     height: 97px;
     width: 235px;
-    // animation-duration: 1.3s;
-    // animation-name: bounceInDown;
+    animation-duration: 1.4s;
+    animation-name: bounceInDown;
 
 
     .card__status {
       padding: 4px 13px 7px;
-      animation-name: bounceInDown;
     }
 
     svg {
@@ -55,9 +54,9 @@
       position: absolute;
       transform: translateX(-50%) rotate(-2.71deg);
       z-index: 1;
-      animation-duration: 1.3s;
+      // animation-duration: 1.3s;
       // animation-name: bounceInDown;
-      animation-delay: 0.1s;
+      // animation-delay: 0.1s;
     }
 
     .epic {
@@ -66,8 +65,8 @@
       right: 0;
       top: 40px;
       z-index: 4;
-      animation-duration: 1.33s;
-      animation-delay: 0.2s;
+      // animation-duration: 1.33s;
+      // animation-delay: 0.2s;
     }
 
     .rare {
@@ -79,8 +78,8 @@
       line-height: 17px;
       transform: rotate(-8.89deg);
       z-index: 2;
-      animation-duration: 1.36s;
-      animation-delay: 0.3s;
+      // animation-duration: 1.36s;
+      // animation-delay: 0.3s;
     }
 
     .uncommon {
@@ -91,8 +90,8 @@
       right: 0;
       transform: rotate(26.89deg);
       z-index: 3;
-      animation-duration: 1.39s;
-      animation-delay: 0.4s;
+      // animation-duration: 1.39s;
+      // animation-delay: 0.4s;
     }
 
     .common {
@@ -103,8 +102,8 @@
       bottom: -20px;
       transform: translateX(-50%) rotate(9.01deg);
       z-index: 5;
-      animation-duration: 1.42s;
-      animation-delay: 0.5s;
+      // animation-duration: 1.42s;
+      // animation-delay: 0.5s;
     }
   }
 
