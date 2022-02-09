@@ -9,6 +9,17 @@ menuBtn.addEventListener('click', function(){
   disableScroll.classList.toggle('body-scroll');
 });
 
+// animated
+wow = new WOW(
+  {
+  boxClass:     'wow',      // default
+  animateClass: 'animated', // default
+  offset:       0,          // default
+  mobile:       true,       // default
+  live:         true        // default
+  }
+  )
+wow.init();
 
 
 

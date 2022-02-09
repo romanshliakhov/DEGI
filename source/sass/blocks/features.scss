@@ -29,6 +29,12 @@
     margin-top: 45px;
     height: 97px;
     width: 235px;
+    visibility: hidden;
+    animation: 0.3s;
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-name: bounceInDown;
+
 
     .card__status {
       padding: 4px 13px 7px;
