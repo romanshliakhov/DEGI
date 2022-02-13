@@ -9,20 +9,6 @@ menuBtn.addEventListener('click', function(){
   disableScroll.classList.toggle('body-scroll');
 });
 
-// animated
-wow = new WOW(
-  {
-  boxClass:     'wow',      // default
-  animateClass: 'animated', // default
-  offset:       0,          // default
-  mobile:       true,       // default
-  live:         true        // default
-  }
-  )
-wow.init();
-
-
-
 // sliders
 let nftsSliderTop = new Swiper('.nfts__top-slider', {
   centeredSlides: true,
@@ -583,7 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hours = 0;
       minutes = 0;
     } else {
-      daysVal.textContent = (days);
+      daysVal.textContent = ('0' + days).slice(-2);
       hoursVal.textContent = ('0' + hours).slice(-2);
       minutesVal.textContent = ('0' + minutes).slice(-2);
     }
